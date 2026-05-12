@@ -1,0 +1,368 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BlTest\\BlTest.csproj": {}
+  },
+  "projects": {
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BlTest\\BlTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BlTest\\BlTest.csproj",
+        "projectName": "BlTest",
+        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BlTest\\BlTest.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BlTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\BL.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\BL.csproj"
+              },
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\DalTest.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\DalTest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\BL.csproj",
+        "projectName": "BL",
+        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\BL.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
+              },
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
+        "projectName": "DalFacade",
+        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj",
+        "projectName": "DalList",
+        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\DalTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\DalTest.csproj",
+        "projectName": "DalTest",
+        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\DalTest.csproj",
+        "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DelTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://www.nuget.org/api/v2": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
+              },
+              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj": {
+                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalList\\DalList.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

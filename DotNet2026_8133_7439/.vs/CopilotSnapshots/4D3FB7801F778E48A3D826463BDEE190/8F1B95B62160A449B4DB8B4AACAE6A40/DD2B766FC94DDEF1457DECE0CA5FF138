@@ -1,0 +1,97 @@
+﻿
+using System;
+using System.Windows.Forms;
+using BlApi;
+
+namespace UI
+{
+    public partial class Form1 : Form
+    {
+        private readonly IBl _bl = Factory.Get();
+        
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            var f = new Forms.CustomerListForm(_bl);
+            f.ShowDialog(this);
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            var f = new Forms.ProductListForm(_bl);
+            f.ShowDialog(this);
+        }
+
+        private void btnSales_Click(object sender, EventArgs e)
+        {
+            var f = new Forms.SaleListForm(_bl);
+            f.ShowDialog(this);
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            var f = new Forms.OrderForm(_bl);
+            f.ShowDialog(this);
+        }
+
+        private void btnMigrate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Use reflection to access DalList DataSource internal static class
+                var dalListAssembly = typeof(Dal.DalList).Assembly;
+                var dataSourceType = dalListAssembly.GetType("Dal.DataSource") ?? throw new Exception("DataSource type not found");
+
+                // Customers
+                var customersField = dataSourceType.GetField("Customers", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+                var productsField = dataSourceType.GetField("Products", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+                var salesField = dataSourceType.GetField("Sales", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+
+                var customers = customersField?.GetValue(null) as System.Collections.IEnumerable;
+                var products = productsField?.GetValue(null) as System.Collections.IEnumerable;
+                var sales = salesField?.GetValue(null) as System.Collections.IEnumerable;
+
+                var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+                var xmlDir = System.IO.Path.Combine(baseDir, "xml");
+                System.IO.Directory.CreateDirectory(xmlDir);
+
+                var xsCust = new System.Xml.Serialization.XmlSerializer(typeof(System.Collections.Generic.List<DO.Customer>));
+                var listCust = new System.Collections.Generic.List<DO.Customer>();
+                if (customers != null)
+                {
+                    foreach (var item in customers)
+                        if (item is DO.Customer c) listCust.Add(c);
+                }
+                using (var fs = new System.IO.FileStream(System.IO.Path.Combine(xmlDir, "customers.xml"), System.IO.FileMode.Create)) xsCust.Serialize(fs, listCust);
+
+                var xsProd = new System.Xml.Serialization.XmlSerializer(typeof(System.Collections.Generic.List<DO.Product>));
+                var listProd = new System.Collections.Generic.List<DO.Product>();
+                if (products != null)
+                {
+                    foreach (var item in products)
+                        if (item is DO.Product p) listProd.Add(p);
+                }
+                using (var fs = new System.IO.FileStream(System.IO.Path.Combine(xmlDir, "products.xml"), System.IO.FileMode.Create)) xsProd.Serialize(fs, listProd);
+
+                var xsSale = new System.Xml.Serialization.XmlSerializer(typeof(System.Collections.Generic.List<DO.Sale>));
+                var listSale = new System.Collections.Generic.List<DO.Sale>();
+                if (sales != null)
+                {
+                    foreach (var item in sales)
+                        if (item is DO.Sale s) listSale.Add(s);
+                }
+                using (var fs = new System.IO.FileStream(System.IO.PathCombine(xmlDir, "sales.xml"), System.IO.FileMode.Create)) xsSale.Serialize(fs, listSale);
+
+                MessageBox.Show(this, "Migration completed");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Migration failed: " + ex.Message);
+            }
+        }
+    }
+}

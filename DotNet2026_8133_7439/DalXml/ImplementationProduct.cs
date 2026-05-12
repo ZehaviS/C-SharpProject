@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Xml.Serialization;
+using DalApi;
+using DO;
+
+namespace Dal;
+
+internal class ImplementationProduct : Iproduct
+{
+    private static readonly string s_file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "xml", "products.xml");
+
+
+    private List<Product> Load()
+    {
+        if (!File.Exists(s_file)) return new List<Product>();
+        var ser = new XmlSerializer(typeof(List<Product>));
+        using var fs = new FileStream(s_file, FileMode.Open);
+        return (List<Product>)ser.Deserialize(fs)!;
+    }
+
+    private void Save(List<Product> list)
+    {
+        var ser = new XmlSerializer(typeof(List<Product>));
+        using var fs = new FileStream(s_file, FileMode.Create);
+        ser.Serialize(fs, list);
+    }
+
+    public int Create(Product item)
+    {
+        var list = Load();
+        var id = Config.ProductNum;
+        var p = item with { ProductId = id };
+        list.Add(p);
+        Save(list);
+        return p.ProductId;
+    }
+
+    public Product? Read(int id)
+    {
+        var list = Load();
+        var p = list.FirstOrDefault(pr => pr?.ProductId == id);
+        if (p == null) throw new DO.ItemNotFoundException("product not found");
+        return p;
+    }
+
+    public Product? Read(Func<Product, bool> filter)
+    {
+        var list = Load();
+        return list.FirstOrDefault(filter);
+    }
+
+    public List<Product> ReadAll(Func<Product, bool>? filter = null)
+    {
+        var list = Load();
+        if (filter == null) return list.ToList();
+        return list.Where(filter).ToList();
+    }
+
+    public void Update(Product item)
+    {
+        var list = Load();
+        var idx = list.FindIndex(p => p.ProductId == item.ProductId);
+        if (idx == -1) throw new DO.ItemNotFoundException("product not found");
+        list[idx] = item;
+        Save(list);
+    }
+
+    public void Delete(int id)
+    {
+        var list = Load();
+        var p = list.FirstOrDefault(pr => pr.ProductId == id);
+        if (p == null) throw new DO.ItemNotFoundException("product not found");
+        list.Remove(p);
+        Save(list);
+    }
+}

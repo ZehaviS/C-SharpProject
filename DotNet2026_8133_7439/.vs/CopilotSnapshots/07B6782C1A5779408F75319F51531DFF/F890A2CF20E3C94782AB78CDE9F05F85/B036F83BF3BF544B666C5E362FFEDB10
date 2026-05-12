@@ -1,0 +1,14 @@
+﻿// קובץ חריגות עבור שכבת ה-Dal: כל חריגה מוגדרת במחלקה נפרדת ומתחילה ב-"Dal"
+namespace DO;
+
+[System.Serializable]
+public class DalItemNotFoundException : System.Exception
+{
+    public DalItemNotFoundException(string message) : base(message) { }
+}
+
+[System.Serializable]
+public class DalItemAlreadyExistsException : System.Exception
+{
+    public DalItemAlreadyExistsException(string message) : base(message) { }
+}

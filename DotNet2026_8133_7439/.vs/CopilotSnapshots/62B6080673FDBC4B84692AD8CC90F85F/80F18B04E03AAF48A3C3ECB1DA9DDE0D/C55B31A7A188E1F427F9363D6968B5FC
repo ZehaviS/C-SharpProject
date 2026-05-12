@@ -1,0 +1,79 @@
+﻿using System;
+using System.Windows.Forms;
+using BO;
+
+namespace UI
+{
+    internal class CustomerEditForm : Form
+    {
+        public Customer? Customer { get; private set; }
+        private readonly TextBox _txtId = new TextBox { Left = 120, Top = 20, Width = 200 };
+        private readonly TextBox _txtName = new TextBox { Left = 120, Top = 60, Width = 200 };
+        private readonly TextBox _txtAddress = new TextBox { Left = 120, Top = 100, Width = 200 };
+        private readonly TextBox _txtPhone = new TextBox { Left = 120, Top = 140, Width = 200 };
+
+        public CustomerEditForm(Customer? c)
+        {
+            Text = c == null ? "הוספת לקוח" : "עדכון לקוח";
+            Width = 360;
+            Height = 240;
+
+            var lblId = new Label { Text = "מזהה:", Left = 20, Top = 20 };
+            var lblName = new Label { Text = "שם:", Left = 20, Top = 60 };
+            var lblAddress = new Label { Text = "כתובת:", Left = 20, Top = 100 };
+            var lblPhone = new Label { Text = "טלפון:", Left = 20, Top = 140 };
+
+            var btnOk = new Button { Text = "אישור", Left = 120, Top = 180, Width = 80 };
+            var btnCancel = new Button { Text = "ביטול", Left = 240, Top = 180, Width = 80 };
+
+            Controls.Add(lblId);
+            Controls.Add(lblName);
+            Controls.Add(lblAddress);
+            Controls.Add(lblPhone);
+            Controls.Add(_txtId);
+            Controls.Add(_txtName);
+            Controls.Add(_txtAddress);
+            Controls.Add(_txtPhone);
+            Controls.Add(btnOk);
+            Controls.Add(btnCancel);
+
+            if (c != null)
+            {
+                _txtId.Text = c.CustomerId.ToString();
+                _txtId.Enabled = false;
+                _txtName.Text = c.CustomerName;
+                _txtAddress.Text = c.CustomerAddress ?? string.Empty;
+                _txtPhone.Text = c.CustomerPhone;
+                Customer = c;
+            }
+
+            btnOk.Click += BtnOk_Click;
+            btnCancel.Click += (_, _) => DialogResult = DialogResult.Cancel;
+        }
+
+        private void BtnOk_Click(object? sender, EventArgs e)
+        {
+            if (!int.TryParse(_txtId.Text, out var id))
+            {
+                MessageBox.Show("מזהה לא תקין");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(_txtName.Text))
+            {
+                MessageBox.Show("יש להזין שם");
+                return;
+            }
+
+            Customer = new Customer
+            {
+                CustomerId = id,
+                CustomerName = _txtName.Text.Trim(),
+                CustomerAddress = _txtAddress.Text.Trim(),
+                CustomerPhone = _txtPhone.Text.Trim()
+            };
+
+            DialogResult = DialogResult.OK;
+        }
+    }
+}

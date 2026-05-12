@@ -1,0 +1,174 @@
+﻿using System;
+using System.Linq;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI
+{
+    internal class OrderForm : Form
+    {
+        private readonly IBl _bl;
+        private readonly Order _order = new Order { ProductInOrder = new List<ProductInOrder>() };
+
+        private readonly ListBox _lstProducts = new ListBox { Left = 20, Top = 20, Width = 300, Height = 200 };
+        private readonly TextBox _txtProductCode = new TextBox { Left = 340, Top = 20, Width = 120 };
+        private readonly Button _btnAddByCode = new Button { Text = "הוספה לפי קוד", Left = 480, Top = 18 };
+        private readonly Button _btnAddFromList = new Button { Text = "בחר מוצר מהרשימה", Left = 340, Top = 60 };
+        private readonly DataGridView _gridOrder = new DataGridView { Left = 20, Top = 240, Width = 610, Height = 200 };
+        private readonly Label _lblTotal = new Label { Left = 20, Top = 450, Width = 400 };
+        private readonly Button _btnDoOrder = new Button { Text = "בצע הזמנה", Left = 480, Top = 450 };
+
+        public OrderForm(IBl bl)
+        {
+            _bl = bl;
+            Text = "בניית הזמנה";
+            Width = 660;
+            Height = 540;
+
+            Controls.Add(_lstProducts);
+            Controls.Add(_txtProductCode);
+            Controls.Add(_btnAddByCode);
+            Controls.Add(_btnAddFromList);
+            Controls.Add(_gridOrder);
+            Controls.Add(_lblTotal);
+            Controls.Add(_btnDoOrder);
+
+            _btnAddByCode.Click += BtnAddByCode_Click;
+            _btnAddFromList.Click += BtnAddFromList_Click;
+            _btnDoOrder.Click += BtnDoOrder_Click;
+
+            _gridOrder.ReadOnly = true;
+            _gridOrder.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            _gridOrder.MultiSelect = false;
+
+            LoadProducts();
+            RefreshOrderView();
+        }
+
+        private void LoadProducts()
+        {
+            try
+            {
+                var products = _bl.Product.ReadAll().Where(p => p != null).Select(p => p!).ToList();
+                _lstProducts.Items.Clear();
+                foreach (var p in products)
+                    _lstProducts.Items.Add($"{p.ProductId} - {p.ProductName} ({p.Price})");
+            }
+            catch
+            {
+                _lstProducts.Items.Add("אין גישה למוצרים");
+            }
+        }
+
+        private void BtnAddByCode_Click(object? sender, EventArgs e)
+        {
+            if (!int.TryParse(_txtProductCode.Text.Trim(), out var id))
+            {
+                MessageBox.Show("קוד מוצר לא תקין");
+                return;
+            }
+
+            AddProductToOrder(id);
+        }
+
+        private void BtnAddFromList_Click(object? sender, EventArgs e)
+        {
+            if (_lstProducts.SelectedItem == null) return;
+            var s = _lstProducts.SelectedItem.ToString() ?? string.Empty;
+            var parts = s.Split(' ');
+            if (!int.TryParse(parts[0], out var id)) return;
+            AddProductToOrder(id);
+        }
+
+        private void AddProductToOrder(int productId)
+        {
+            try
+            {
+                var p = _bl.Product.Read(productId);
+                if (p == null)
+                {
+                    MessageBox.Show("מוצר לא נמצא");
+                    return;
+                }
+
+                var countStr = Microsoft.VisualBasic.Interaction.InputBox("כמות:", "הוספת מוצר", "1");
+                if (!int.TryParse(countStr, out var count) || count <= 0)
+                {
+                    MessageBox.Show("כמות לא תקינה");
+                    return;
+                }
+
+                var existing = _order.ProductInOrder!.FirstOrDefault(x => x.ProductId == productId);
+                if (existing != null)
+                {
+                    existing.Count += count;
+                }
+                else
+                {
+                    _order.ProductInOrder.Add(new ProductInOrder
+                    {
+                        ProductId = p.ProductId,
+                        ProductName = p.ProductName,
+                        BasePrice = p.Price,
+                        Count = count,
+                        Sales = new List<SaleInProduct>(),
+                        FinalPrice = 0
+                    });
+                }
+
+                // Ask BL to find sales for the product
+                var prodInOrder = _order.ProductInOrder!.First(x => x.ProductId == productId);
+                _bl.Order.SearchSaleForProduct(prodInOrder, _order.IsPreferedCustomer);
+                _bl.Order.CalcTotalPriceForProduct(prodInOrder);
+                _bl.Order.CalcTotalPrice(_order);
+
+                RefreshOrderView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בהוספה");
+            }
+        }
+
+        private void RefreshOrderView()
+        {
+            try
+            {
+                var list = _order.ProductInOrder!.Select(p => new
+                {
+                    Id = p.ProductId,
+                    Name = p.ProductName,
+                    Count = p.Count,
+                    BasePrice = p.BasePrice,
+                    FinalPrice = p.FinalPrice,
+                    Sales = string.Join(", ", p.Sales?.Select(s => $"{s.SaleId}:{s.PriceAfterSale}x{s.ProductsCountToSale}") ?? Array.Empty<string>())
+                }).ToList();
+
+                _gridOrder.DataSource = list;
+                _lblTotal.Text = $"סכום לתשלום: {_order.TotalPrice}";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בעדכון ההזמנה");
+            }
+        }
+
+        private void BtnDoOrder_Click(object? sender, EventArgs e)
+        {
+            try
+            {
+                _bl.Order.DoOrder(_order);
+                MessageBox.Show("ההזמנה בוצעה");
+                _order.ProductInOrder!.Clear();
+                _order.TotalPrice = 0;
+                RefreshOrderView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בביצוע הזמנה");
+            }
+        }
+    }
+}

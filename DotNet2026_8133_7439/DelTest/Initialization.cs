@@ -1,0 +1,39 @@
+﻿using DalApi;
+using DalApi;
+using DO;
+namespace DalTest;
+
+public static class Initialization
+{
+    private static IDal s_dal;
+    public static void Initialize()
+    {
+        s_dal= DalApi.Factory.Get;
+        createCustomers();
+        createProducts();
+        createSales();
+    }
+    private static void createSales()
+    {
+        s_dal.sale.Create(new Sale(1, 1, 10, 2.5, true,DateTime.Now, DateTime.Now.AddMonths(1)));
+        s_dal.sale.Create(new Sale(2, 2, 10, 2, true, DateTime.Now, DateTime.Now.AddMonths(1)));
+        s_dal.sale.Create(new Sale(3, 3, 3, 4, false, DateTime.Now, DateTime.Now.AddMonths(1)));
+        s_dal.sale.Create(new Sale(4, 4, 5, 3, false, DateTime.Now, DateTime.Now.AddMonths(1)));
+        s_dal.sale.Create(new Sale(5, 5, 1, 135, true, DateTime.Now, DateTime.Now.AddMonths(1)));
+    }
+    private static void createProducts()
+    {
+        s_dal.product.Create(new Product(1, "Cheese borax", ProductsCategories.DIARY_PASTRY,3,50));
+        s_dal.product.Create(new Product(2, "Potato borax", ProductsCategories.FUR_PASTRY, 2.1, 90));
+        s_dal.product.Create(new Product(3, "Ice coffee", ProductsCategories.DRINKS, 5, 200));
+        s_dal.product.Create(new Product(4, "Baguette", ProductsCategories.BREADS, 4.5, 100));
+        s_dal.product.Create(new Product(5, "Birthday cake", ProductsCategories.SHOWCASE_CAKES, 150, 10));
+
+    }
+    private static void createCustomers()
+    {
+        s_dal.customer.Create(new Customer(329427439,"Tovi Zak","Netivot Hamishpat 89","0527189210"));
+        s_dal.customer.Create(new Customer(328328133, "Zehavi Sabo", "Netivot Shalom 10", "0556758544"));
+
+    }
+}

@@ -1,0 +1,113 @@
+﻿using System.Windows.Forms;
+
+namespace UI
+{
+    partial class Form1 : Form
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private System.Windows.Forms.Button btnCustomers;
+        private System.Windows.Forms.Button btnProducts;
+        private System.Windows.Forms.Button btnSales;
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnMigrate;
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.btnCustomers = new System.Windows.Forms.Button();
+            this.btnProducts = new System.Windows.Forms.Button();
+            this.btnSales = new System.Windows.Forms.Button();
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnMigrate = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnCustomers
+            // 
+            this.btnCustomers.Location = new System.Drawing.Point(30, 30);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(150, 40);
+            this.btnCustomers.TabIndex = 0;
+            this.btnCustomers.Text = "Customers";
+            this.btnCustomers.UseVisualStyleBackColor = true;
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
+            // 
+            // btnProducts
+            // 
+            this.btnProducts.Location = new System.Drawing.Point(30, 80);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(150, 40);
+            this.btnProducts.TabIndex = 1;
+            this.btnProducts.Text = "Products";
+            this.btnProducts.UseVisualStyleBackColor = true;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
+            // 
+            // btnSales
+            // 
+            this.btnSales.Location = new System.Drawing.Point(30, 130);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.Size = new System.Drawing.Size(150, 40);
+            this.btnSales.TabIndex = 2;
+            this.btnSales.Text = "Sales";
+            this.btnSales.UseVisualStyleBackColor = true;
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Location = new System.Drawing.Point(30, 180);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(150, 40);
+            this.btnOrder.TabIndex = 3;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
+            // 
+            // btnMigrate
+            // 
+            this.btnMigrate.Location = new System.Drawing.Point(30, 230);
+            this.btnMigrate.Name = "btnMigrate";
+            this.btnMigrate.Size = new System.Drawing.Size(150, 40);
+            this.btnMigrate.TabIndex = 4;
+            this.btnMigrate.Text = "Migrate List->Xml";
+            this.btnMigrate.UseVisualStyleBackColor = true;
+            this.btnMigrate.Click += new System.EventHandler(this.btnMigrate_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOrder);
+            this.Controls.Add(this.btnSales);
+            this.Controls.Add(this.btnProducts);
+            this.Controls.Add(this.btnCustomers);
+            this.Controls.Add(this.btnMigrate);
+            this.Name = "Form1";
+            this.Text = "Store POS";
+            this.ResumeLayout(false);
+        }
+
+        #endregion
+    }
+}

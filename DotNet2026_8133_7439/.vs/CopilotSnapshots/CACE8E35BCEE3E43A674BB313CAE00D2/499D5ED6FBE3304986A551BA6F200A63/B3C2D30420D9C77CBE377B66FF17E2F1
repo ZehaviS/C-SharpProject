@@ -1,0 +1,10 @@
+﻿
+namespace BO;
+
+internal class SaleInProduct
+{
+    public int SaleId { get; set; }
+    public int ProductsCountToSale { get; set; }
+    public double PriceAfterSale { get; set; }
+    public bool OnlyClubCustomers { get; set; }
+}

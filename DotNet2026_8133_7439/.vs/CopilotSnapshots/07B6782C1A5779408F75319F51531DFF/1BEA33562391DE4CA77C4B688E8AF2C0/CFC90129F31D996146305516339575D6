@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using DO;
+
+namespace Dal;
+
+public static class EnumerableExtensions
+{
+    /// <summary>
+    /// Removes the first element from the source that matches the predicate.
+    /// The source must be an IList<T> or ICollection<T> (e.g. List<T>) so the removal
+    /// affects the original collection. If no matching element is found, an
+    /// ItemNotFoundException is thrown (from DO namespace).
+    /// </summary>
+    public static void RemoveFirst<T>(this IEnumerable<T> source, Func<T, bool> predicate, string notFoundMessage = "item not found")
+    {
+        if (source is IList<T> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                var item = list[i];
+                if (predicate(item))
+                {
+                    list.RemoveAt(i);
+                    return;
+                }
+            }
+            throw new ItemNotFoundException(notFoundMessage);
+        }
+
+        if (source is ICollection<T> coll)
+        {
+            if (!source.Any(predicate))
+                throw new ItemNotFoundException(notFoundMessage);
+
+            var item = source.First(predicate);
+            coll.Remove(item);
+            return;
+        }
+
+        throw new NotSupportedException("Source must be an IList<T> or ICollection<T> to support removal.");
+    }
+}

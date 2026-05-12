@@ -1,0 +1,6 @@
+﻿
+namespace BlImplementation;
+
+internal class ImplementationCustomer
+{
+}

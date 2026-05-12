@@ -1,0 +1,14 @@
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.AssemblyReference.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\bin\Debug\Tools.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\bin\Debug\Tools.pdb
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.AssemblyReference.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.pdb
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\bin\Debug\Tools.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\bin\Debug\Tools.pdb
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.AssemblyReference.cache
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\Tools\obj\Debug\Tools.pdb

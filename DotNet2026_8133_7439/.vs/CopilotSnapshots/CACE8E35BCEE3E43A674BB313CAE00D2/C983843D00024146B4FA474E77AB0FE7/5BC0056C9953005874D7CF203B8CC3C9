@@ -1,0 +1,62 @@
+﻿using System.Data.Common;
+using BlApi;
+using BO;
+using DalApi;
+namespace BlImplementation;
+
+internal class ImplementationOrder : IOrder
+{
+    //    1.	SearchSaleForProduct – עדכון המבצעים המתאימים למוצר בהזמנה
+    //מקבלת כפרמטרים מוצר בהזמנה ופרמטר בוליאני –האם ההזמנה היא ללקוח קיים,
+    //לא מחזירה ערך.
+    //מימוש הפונקציה:
+    //מציבים לתכונה Sales של המוצר בהזמנה את תוצאת השאילתה הבאה:
+    //כל המבצעים שמיועדים למוצר המבוקש, שהם בתוקף, ושהכמות בהזמנה הגיעה לכמות במבצע ואם ההזמנה היא לא עבור לקוח קיים, יש לבדוק גם שהמבצע מיועד לכל הלקוחות(ניתן לפצל לשתי שאילתות נפרדות)
+    //הרשימה תמוין לפי מחיר ליחידה במבצע(כלומר, לפי כדאיות המבצע).
+    //כמובן שיש להמיר את האובייקטים מסוג DO.Sale לסוג BO.SaleInProduct
+    public List<SaleInProduct> AddProductToOrder(Order order, int productId, int count)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void CalcTotalPrice(Order order)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void CalcTotalPriceForProduct(ProductInOrder productInOrder)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void DoOrder(Order order)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void SearchSaleForProduct(ProductInOrder productInOrder, bool isPreferedCustomer)
+    {
+        var now = DateTime.Now;
+
+        var relevantSales = DataSource.Sales
+            .Where(sale =>
+                sale.ProductId == productInOrder.ProductId &&
+                (sale.DateStart == null || sale.DateStart <= now) &&
+                (sale.DateEnd == null || sale.DateEnd >= now) &&
+                productInOrder.Count >= sale.ProductsCountToSale &&
+                (isPreferedCustomer || !sale.OnlyClubCustomers)
+            )
+            .OrderBy(sale => sale.PriceAfterSale)
+            .Select(sale => new SaleInProduct
+            {
+                SaleId = sale.SaleId,
+                PriceAfterSale = sale.PriceAfterSale,
+                ProductsCountToSale = sale.ProductsCountToSale,
+                OnlyClubCustomers = sale.OnlyClubCustomers
+            })
+            .ToList();
+
+        productInOrder.Sales = relevantSales;
+    }
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomer>
+	<Customer>
+		<id>328328133</id>
+		<customer_name>Zheavi</customer_name>
+		<customer_adress>1555</customer_adress>
+		<customer_phon>0556758544</customer_phon>
+		<isClubMember>true</isClubMember>
+	</Customer>
+</ArrayOfCustomer>

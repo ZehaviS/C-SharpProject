@@ -1,0 +1,17 @@
+﻿using BO;
+namespace BlApi;
+
+internal interface ICustomer
+{
+    int Create(Customer item);
+    Customer? Read(int id);
+    Customer? Read(Func<Customer, bool> filter);
+
+    List<Customer?> ReadAll(Func<Customer, bool>? filter = null);
+    void Update(Customer item);
+    void Delete(int id);
+
+    //מתודה לבדיקה האם לקוח קיים – מחזירה bool.
+    bool IsCustomerExist(int id);
+}
+

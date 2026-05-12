@@ -1,0 +1,25 @@
+﻿using System.Linq;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI.Forms
+{
+    public partial class SaleListForm : Form
+    {
+        private readonly IBl _bl;
+
+        public SaleListForm(IBl bl)
+        {
+            _bl = bl;
+            InitializeComponent();
+            LoadSales();
+        }
+
+        private void LoadSales(string? filter = null)
+        {
+            var list = _bl.Sale.ReadAll(filter == null ? null : new System.Func<Sale, bool>(s => s?.SaleId.ToString().Contains(filter!))).Where(s => s != null).Select(s => new { Id = s!.SaleId, PriceAfter = s.PriceAfterSale }).ToList();
+            dgvSales.DataSource = list;
+        }
+    }
+}

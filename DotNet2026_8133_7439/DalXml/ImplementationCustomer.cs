@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Xml.Serialization;
+using DalApi;
+using DO;
+
+namespace Dal;
+
+internal class ImplementationCustomer : Icustomer
+{
+    private static readonly string s_file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "xml", "customers.xml");
+
+    private List<Customer> Load()
+    {
+        if (!File.Exists(s_file)) return new List<Customer>();
+        var ser = new XmlSerializer(typeof(List<Customer>));
+        using var fs = new FileStream(s_file, FileMode.Open);
+        return (List<Customer>)ser.Deserialize(fs)!;
+    }
+
+    private void Save(List<Customer> list)
+    {
+        var ser = new XmlSerializer(typeof(List<Customer>));
+        using var fs = new FileStream(s_file, FileMode.Create);
+        ser.Serialize(fs, list);
+    }
+
+    public int Create(Customer item)
+    {
+        var list = Load();
+
+        // בדיקת כפילות לפי ת"ז
+        if (list.Any(c => c.CustomerId == item.CustomerId))
+            throw new Exception("Customer already exists");
+
+        list.Add(item);
+        Save(list);
+
+        return item.CustomerId;
+    }
+
+    public Customer? Read(int id)
+    {
+        var list = Load();
+        var c = list.FirstOrDefault(cu => cu?.CustomerId == id);
+        if (c == null) throw new DO.ItemNotFoundException("customer not found");
+        return c;
+    }
+
+    public Customer? Read(Func<Customer, bool> filter)
+    {
+        var list = Load();
+        return list.FirstOrDefault(filter);
+    }
+
+    public List<Customer> ReadAll(Func<Customer, bool>? filter = null)
+    {
+        var list = Load();
+        if (filter == null) return list.ToList();
+        return list.Where(filter).ToList();
+    }
+
+    public void Update(Customer item)
+    {
+        var list = Load();
+        var idx = list.FindIndex(c => c.CustomerId == item.CustomerId);
+        if (idx == -1) throw new DO.ItemNotFoundException("customer not found");
+        list[idx] = item;
+        Save(list);
+    }
+
+    public void Delete(int id)
+    {
+        var list = Load();
+        var c = list.FirstOrDefault(cu => cu.CustomerId == id);
+        if (c == null) throw new DO.ItemNotFoundException("customer not found");
+        list.Remove(c);
+        Save(list);
+    }
+}

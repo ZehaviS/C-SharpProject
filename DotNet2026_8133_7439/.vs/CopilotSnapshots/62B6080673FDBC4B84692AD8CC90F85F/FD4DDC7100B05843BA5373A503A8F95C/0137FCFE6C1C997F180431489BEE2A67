@@ -1,0 +1,37 @@
+﻿namespace UI
+using System;
+using System.Windows.Forms;
+using BlApi;
+
+namespace UI;
+{
+    public partial class Form1 : Form
+    {
+        private readonly IBl _bl = Factory.Get();
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            // build a small menu in Hebrew
+            var btnCustomers = new Button { Text = "לקוחות", Left = 20, Top = 20, Width = 120 };
+            var btnProducts = new Button { Text = "מוצרים", Left = 160, Top = 20, Width = 120 };
+            var btnSales = new Button { Text = "מבצעים", Left = 300, Top = 20, Width = 120 };
+            var btnOrder = new Button { Text = "הזמנה (קופאי)", Left = 440, Top = 20, Width = 150 };
+
+            btnCustomers.Click += (_, _) => new CustomerForm(_bl).ShowDialog(this);
+            btnProducts.Click += (_, _) => new ProductForm(_bl).ShowDialog(this);
+            btnSales.Click += (_, _) => new SaleForm(_bl).ShowDialog(this);
+            btnOrder.Click += (_, _) => new OrderForm(_bl).ShowDialog(this);
+
+            Controls.Add(btnCustomers);
+            Controls.Add(btnProducts);
+            Controls.Add(btnSales);
+            Controls.Add(btnOrder);
+
+            Text = "מערכת - תפריט ראשי";
+            Width = 640;
+            Height = 140;
+        }
+    }
+}

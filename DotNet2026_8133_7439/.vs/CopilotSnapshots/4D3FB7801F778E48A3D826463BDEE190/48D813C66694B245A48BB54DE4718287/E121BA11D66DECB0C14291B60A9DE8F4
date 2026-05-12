@@ -1,0 +1,26 @@
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI.Forms
+{
+    public partial class ProductListForm : Form
+    {
+        private readonly IBl _bl;
+
+        public ProductListForm(IBl bl)
+        {
+            _bl = bl;
+            InitializeComponent();
+            LoadProducts();
+        }
+
+        private void LoadProducts(string? filter = null)
+        {
+            var list = _bl.Product.ReadAll(filter == null ? null : new Func<Product, bool>(p => p?.ProductName != null && p.ProductName.Contains(filter, StringComparison.OrdinalIgnoreCase)));
+            dgvProducts.DataSource = list.Select(p => new { Id = p?.ProductId, Name = p?.ProductName, Price = p?.Price }).ToList();
+        }
+    }
+}

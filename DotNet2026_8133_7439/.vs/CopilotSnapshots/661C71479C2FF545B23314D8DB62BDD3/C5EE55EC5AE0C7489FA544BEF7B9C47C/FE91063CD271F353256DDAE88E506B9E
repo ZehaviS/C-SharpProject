@@ -1,0 +1,19 @@
+﻿
+using DalApi;
+using BlApi;
+using BO;
+
+namespace BlImplementation;
+
+internal class ImplementationCustomer : ICustomer
+{
+    private readonly IDal _dal = DalApi.Factory.Get;
+
+    public int Create(Customer item) => throw new NotImplementedException();
+    public Customer? Read(int id) => throw new NotImplementedException();
+    public Customer? Read(Func<Customer, bool> filter) => throw new NotImplementedException();
+    public List<Customer?> ReadAll(Func<Customer, bool>? filter = null) => throw new NotImplementedException();
+    public void Update(Customer item) => throw new NotImplementedException();
+    public void Delete(int id) => throw new NotImplementedException();
+    public bool IsCustomerExist(int id) => throw new NotImplementedException();
+}

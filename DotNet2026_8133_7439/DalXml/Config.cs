@@ -1,0 +1,48 @@
+﻿using System;
+using System;
+using System.IO;
+using System.Linq;
+using System.Xml.Linq;
+
+namespace Dal
+{
+    internal static class Config
+    {
+        // file name without extension
+        private static readonly string s_fileName = "data-config";
+
+        private static string FilePath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "xml", s_fileName + ".xml");
+
+        private static XElement Load() => XElement.Load(FilePath);
+
+        public static int ProductNum
+        {
+            get
+            {
+                var root = Load();
+                var elem = root.Element("ProductNum");
+                int val = int.Parse(elem?.Value ?? "0");
+                int next = val + 1;
+                elem.Value = next.ToString();
+                root.Save(FilePath);
+                return val;
+            }
+        }
+
+        public static int SaleNum
+        {
+            get
+            {
+                var root = Load();
+                var elem = root.Element("SaleNum");
+                int val = int.Parse(elem?.Value ?? "0");
+                int next = val + 1;
+                elem.Value = next.ToString();
+                root.Save(FilePath);
+                return val;
+            }
+        }
+
+       
+    }
+}

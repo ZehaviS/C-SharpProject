@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI.Forms
+{
+    public partial class OrderForm : Form
+    {
+        private readonly IBl _bl;
+        private readonly Order _order = new Order();
+
+        public OrderForm(IBl bl)
+        {
+            _bl = bl;
+            InitializeComponent();
+            dgvOrderItems.AutoGenerateColumns = false;
+            RefreshOrderView();
+            LoadProducts();
+        }
+
+        private void LoadProducts()
+        {
+            var list = _bl.Product.ReadAll();
+            cmbProducts.DataSource = list.Where(p => p != null).Select(p => p!).ToList();
+            cmbProducts.DisplayMember = "ProductName";
+            cmbProducts.ValueMember = "ProductId";
+        }
+
+        private void RefreshOrderView()
+        {
+            dgvOrderItems.DataSource = _order.ProductsInOrder.Select(p => new { p.ProductId, p.ProductName, p.Count, p.TotalPrice }).ToList();
+            lblTotal.Text = _order.TotalPrice.ToString("C");
+        }
+
+        private void btnAddByCode_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtProductCode.Text, out var id))
+            {
+                MessageBox.Show(this, "Invalid product code");
+                return;
+            }
+            AddProductToOrder(id, (int)numCount.Value);
+        }
+
+        private void btnAddBySelect_Click(object sender, EventArgs e)
+        {
+            if (cmbProducts.SelectedItem == null) return;
+            var p = (Product)cmbProducts.SelectedItem;
+            AddProductToOrder(p.ProductId, (int)numCount.Value);
+        }
+
+        private void AddProductToOrder(int productId, int count)
+        {
+            try
+            {
+                var sales = _bl.Order.AddProductToOrder(_order, productId, count);
+                // BL updates order.ProductsInOrder and calculates totals according to architecture
+                RefreshOrderView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Error adding product: " + ex.Message);
+            }
+        }
+
+        private void btnDoOrder_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _bl.Order.DoOrder(_order);
+                MessageBox.Show(this, "Order completed");
+                _order.ProductsInOrder.Clear();
+                RefreshOrderView();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(this, "Error completing order: " + ex.Message);
+            }
+        }
+    }
+}

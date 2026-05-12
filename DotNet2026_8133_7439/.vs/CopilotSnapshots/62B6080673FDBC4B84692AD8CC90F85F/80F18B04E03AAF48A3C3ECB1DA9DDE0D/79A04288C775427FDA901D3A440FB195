@@ -1,0 +1,167 @@
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI
+{
+    internal class CustomerForm : Form
+    {
+        private readonly IBl _bl;
+        private readonly DataGridView _grid = new DataGridView { Dock = DockStyle.Top, Height = 300 };
+        private readonly TextBox _filterBox = new TextBox { Left = 20, Top = 320, Width = 300 };
+        private readonly Button _btnFilter = new Button { Text = "סינון לפי שם", Left = 340, Top = 318 };
+        private readonly Button _btnAdd = new Button { Text = "הוספה", Left = 20, Top = 360 };
+        private readonly Button _btnEdit = new Button { Text = "עדכון", Left = 120, Top = 360 };
+        private readonly Button _btnDelete = new Button { Text = "מחיקה", Left = 220, Top = 360 };
+        private readonly Button _btnRefresh = new Button { Text = "רענון", Left = 320, Top = 360 };
+
+        public CustomerForm(IBl bl)
+        {
+            _bl = bl;
+            Text = "לקוחות";
+            Width = 700;
+            Height = 460;
+
+            Controls.Add(_grid);
+            Controls.Add(_filterBox);
+            Controls.Add(_btnFilter);
+            Controls.Add(_btnAdd);
+            Controls.Add(_btnEdit);
+            Controls.Add(_btnDelete);
+            Controls.Add(_btnRefresh);
+
+            _grid.ReadOnly = true;
+            _grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            _grid.MultiSelect = false;
+
+            _btnFilter.Click += BtnFilter_Click;
+            _btnRefresh.Click += (_, _) => LoadData();
+            _btnAdd.Click += BtnAdd_Click;
+            _btnEdit.Click += BtnEdit_Click;
+            _btnDelete.Click += BtnDelete_Click;
+
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                var list = _bl.Customer.ReadAll().Where(c => c != null).Select(c => new
+                {
+                    Id = c!.CustomerId,
+                    Name = c!.CustomerName,
+                    Address = c!.CustomerAddress,
+                    Phone = c!.CustomerPhone
+                }).ToList();
+
+                _grid.DataSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בקריאה");
+            }
+        }
+
+        private void BtnFilter_Click(object? sender, EventArgs e)
+        {
+            var txt = _filterBox.Text?.Trim();
+            try
+            {
+                if (string.IsNullOrEmpty(txt))
+                {
+                    LoadData();
+                    return;
+                }
+
+                var list = _bl.Customer.ReadAll(c => c != null && c.CustomerName.Contains(txt, StringComparison.CurrentCultureIgnoreCase))
+                    .Where(c => c != null).Select(c => new
+                    {
+                        Id = c!.CustomerId,
+                        Name = c!.CustomerName,
+                        Address = c!.CustomerAddress,
+                        Phone = c!.CustomerPhone
+                    }).ToList();
+
+                _grid.DataSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בסינון");
+            }
+        }
+
+        private void BtnAdd_Click(object? sender, EventArgs e)
+        {
+            var dlg = new CustomerEditForm(null);
+            if (dlg.ShowDialog(this) == DialogResult.OK)
+            {
+                try
+                {
+                    var id = _bl.Customer.Create(dlg.Customer!);
+                    MessageBox.Show($"נוצר לקוח עם מזהה {id}");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "שגיאה ביצירה");
+                }
+            }
+        }
+
+        private BO.Customer? SelectedCustomer()
+        {
+            if (_grid.CurrentRow == null) return null;
+            var idObj = _grid.CurrentRow.Cells[0].Value;
+            if (idObj == null) return null;
+            if (!int.TryParse(idObj.ToString(), out var id)) return null;
+            try
+            {
+                return _bl.Customer.Read(id);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בקריאה");
+                return null;
+            }
+        }
+
+        private void BtnEdit_Click(object? sender, EventArgs e)
+        {
+            var c = SelectedCustomer();
+            if (c == null) return;
+            var dlg = new CustomerEditForm(c);
+            if (dlg.ShowDialog(this) == DialogResult.OK)
+            {
+                try
+                {
+                    _bl.Customer.Update(dlg.Customer!);
+                    MessageBox.Show("עודכן");
+                    LoadData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "שגיאה בעדכון");
+                }
+            }
+        }
+
+        private void BtnDelete_Click(object? sender, EventArgs e)
+        {
+            var c = SelectedCustomer();
+            if (c == null) return;
+            if (MessageBox.Show($"למחוק לקוח {c.CustomerName}?", "אישור", MessageBoxButtons.YesNo) != DialogResult.Yes) return;
+            try
+            {
+                _bl.Customer.Delete(c.CustomerId);
+                LoadData();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה במחיקה");
+            }
+        }
+    }
+}

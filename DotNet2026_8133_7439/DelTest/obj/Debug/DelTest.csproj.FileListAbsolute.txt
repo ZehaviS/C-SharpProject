@@ -1,0 +1,101 @@
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.sourcelink.json
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.sourcelink.json
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.sourcelink.json
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.sourcelink.json
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.sourcelink.json
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.exe
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.deps.json
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.runtimeconfig.json
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DelTest.pdb
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.AssemblyReference.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.GeneratedMSBuildEditorConfig.editorconfig
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfoInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.AssemblyInfo.cs
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.CoreCompileInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.csproj.Up2Date
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DelTest.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.pdb
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DelTest.genruntimeconfig.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DelTest.dll

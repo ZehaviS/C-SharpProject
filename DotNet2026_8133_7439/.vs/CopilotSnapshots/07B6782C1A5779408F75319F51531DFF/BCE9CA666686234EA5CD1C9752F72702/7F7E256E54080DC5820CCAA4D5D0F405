@@ -1,0 +1,32 @@
+﻿// ...existing code...
+            else if (entity == "Product")
+            {
+                // תיעוד בעברית על השינוי:
+                // שיניתי את בלוק העדכון של מוצר כך שיציג תפריט בחירת קטגוריה כמו בפונקציית CreateProduct.
+                // - מציג את כל הערכים של enum ProductsCategories עם המספר שלהם.
+                // - בודק קלט תקין בעזרת int.TryParse ו-Enum.IsDefined.
+                // - ממשיך בקליטת מחיר וספירה ומבצע עדכון כמו קודם.
+
+                Console.Write("ProductId: "); int.TryParse(Console.ReadLine(), out int id);
+                Console.Write("Name: "); string name = Console.ReadLine() ?? "";
+
+                // הצגת תפריט הקטגוריות זהה להוספה
+                Console.WriteLine("Select a Category:");
+                foreach (var category in Enum.GetValues(typeof(ProductsCategories)))
+                {
+                    Console.WriteLine($"{(int)category}: {category}");
+                }
+
+                int cat;
+                while (!int.TryParse(Console.ReadLine(), out cat) || !Enum.IsDefined(typeof(ProductsCategories), cat))
+                {
+                    Console.WriteLine("Invalid choice. Please select a valid category.");
+                }
+
+                Console.Write("Price (double): "); double.TryParse(Console.ReadLine(), out double price);
+                Console.Write("Count (int): "); int.TryParse(Console.ReadLine(), out int count);
+                var p = new Product(id, name, (ProductsCategories)cat, price, count);
+                s_dal.product.Update(p);
+                Console.WriteLine("Updated.");
+            }
+// ...existing code...

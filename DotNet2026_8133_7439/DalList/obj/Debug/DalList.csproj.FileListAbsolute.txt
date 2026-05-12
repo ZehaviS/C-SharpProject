@@ -1,0 +1,96 @@
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.sourcelink.json
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+C:\Users\huser\Documents\GitHub\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.sourcelink.json
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+Z:\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.sourcelink.json
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\Handasa\יד תשפו\סבו זהבה\c#\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.sourcelink.json
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+Z:\יד תשפו\זק טובה\c#\project dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.sourcelink.json
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+Z:\יד תשפו\סבו זהבה\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.deps.json
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\DalList.pdb
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.AssemblyReference.cache
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.GeneratedMSBuildEditorConfig.editorconfig
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfoInputs.cache
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.AssemblyInfo.cs
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.CoreCompileInputs.cache
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.csproj.Up2Date
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\refint\DalList.dll
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\DalList.pdb
+Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DalList\obj\Debug\ref\DalList.dll

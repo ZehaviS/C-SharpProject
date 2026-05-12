@@ -1,0 +1,81 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+using System.Globalization;
+
+namespace Tools
+{
+    public class LogManager
+    {
+        private const string Log = "Log";
+
+        public static void LogMessage(string project_name, string func_name, string message)//פונקציה סטטית לקבלת ניתוב התקיה הנוכחית
+        {
+            // תיקיית חודש נפרדת (פורמט yyyy-MM)
+            string monthDirName = DateTime.Now.ToString("yyyy-MM");
+            string dirPath = Path.Combine(GetCurrentDirectoryPath(), monthDirName);
+
+            if (!Directory.Exists(dirPath))
+                Directory.CreateDirectory(dirPath);
+
+            // קובץ יומי (שם מבוסס על תאריך בלבד)
+            string fileName = $"log_{DateTime.Now:yyyyMMdd}.txt";
+            string filePath = Path.Combine(dirPath, fileName);
+
+            if (!File.Exists(filePath))
+                File.Create(filePath).Close();
+
+            string logEntry = $"{DateTime.Now}\t{project_name}.{func_name}:\t{message}";
+            File.AppendAllText(filePath, logEntry + Environment.NewLine);
+        }
+
+        // מחזירה את נתיב התקייה הנוכחית
+        public static string GetCurrentDirectoryPath()
+        {
+            return Directory.GetCurrentDirectory();
+        }
+
+        // מחזירה נתיב לקובץ עם שם מבוסס על התאריך והשעה הנוכחית
+        public static string GetCurrentFilePath()
+        {
+            string dir = GetCurrentDirectoryPath();
+            string fileName = $"log_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
+            return Path.Combine(dir, fileName);
+        }
+
+        // מוחק תיקיות לוג חודשיות ישנות: התיקיות חייבות להיות בפורמט שם "yyyy-MM"
+        // keepMonths = מספר החודשים לשמור (למשל 1 ישמור את התיקיה של החודש הנוכחי בלבד)
+        public static void CleanOldLogDirectories(int keepMonths)
+        {
+            if (keepMonths < 0) return;
+
+            string baseDir = GetCurrentDirectoryPath();
+            var dirs = Directory.GetDirectories(baseDir);
+            DateTime threshold = DateTime.Now.AddMonths(-keepMonths);
+
+            foreach (var dir in dirs)
+            {
+                string name = Path.GetFileName(dir);
+                if (DateTime.TryParseExact(name, "yyyy-MM", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dirDate))
+                {
+                    // אם התיקיה מוקדמת מתאריך הסף - נמחק אותה
+                    if (dirDate < new DateTime(threshold.Year, threshold.Month, 1))
+                    {
+                        try
+                        {
+                            Directory.Delete(dir, true);
+                        }
+                        catch
+                        {
+                            // בשגיאה נמנע מלזרוק - אפשר להוסיף טיפול לוג אם נדרש
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,334 @@
+﻿using BL;
+using BlApi;
+
+namespace BlTest
+{
+    internal class Program
+    {
+        static readonly IBl s_bl = Factory.Get();
+
+        static void Main(string[] args)
+        {
+            try
+            {
+                DalTest.Initialization.Initialize();
+                DisplayMainMenu();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Critical Error: {ex.Message}");
+            }
+        }
+
+        #region Entity Input Logic
+
+        private static BO.Customer InputCustomer(BO.Customer? oldCustomer = null)
+        {
+            int id;
+
+            if (oldCustomer == null)
+            {
+                Console.Write("Enter Customer ID: ");
+                int.TryParse(Console.ReadLine(), out id);
+            }
+            else
+            {
+                id = oldCustomer.CustomerId;
+                Console.WriteLine($"Updating Customer ID: {id}");
+            }
+
+            Console.Write($"Enter Name (current: '{oldCustomer?.CustomerName}'): ");
+            string nameInput = Console.ReadLine() ?? "";
+
+            string name = string.IsNullOrWhiteSpace(nameInput)
+                ? (oldCustomer?.CustomerName ?? "")
+                : nameInput;
+
+            Console.Write($"Enter Phone Number (current: '{oldCustomer?.CustomerPhone}'): ");
+            string phoneInput = Console.ReadLine() ?? "";
+
+            string phone = string.IsNullOrWhiteSpace(phoneInput)
+                ? (oldCustomer?.CustomerPhone ?? "")
+                : phoneInput;
+
+            Console.Write($"Enter Address (current: '{oldCustomer?.CustomerAddress}'): ");
+            string addressInput = Console.ReadLine() ?? "";
+
+            string address = string.IsNullOrWhiteSpace(addressInput)
+                ? (oldCustomer?.CustomerAddress ?? "")
+                : addressInput;
+
+            return new BO.Customer
+            {
+                CustomerId = id,
+                CustomerName = name,
+                CustomerPhone = phone,
+                CustomerAddress = address
+            };
+        }
+
+        private static BO.Product InputProduct(BO.Product? oldProduct = null)
+        {
+            int id = oldProduct?.ProductId ?? 0;
+
+            Console.Write($"Enter Product Name (current: '{oldProduct?.ProductName}'): ");
+            string nameInput = Console.ReadLine() ?? "";
+
+            string name = string.IsNullOrWhiteSpace(nameInput)
+                ? (oldProduct?.ProductName ?? "Unknown")
+                : nameInput;
+
+            Console.Write($"Enter Price (current: {oldProduct?.ProductPrice}): ");
+            string priceInput = Console.ReadLine() ?? "";
+
+            double price;
+
+            if (string.IsNullOrWhiteSpace(priceInput))
+                price = oldProduct?.ProductPrice ?? 0;
+            else
+                double.TryParse(priceInput, out price);
+
+            Console.Write($"Enter Quantity in stock (current: {oldProduct?.ProductCount}): ");
+            string qtyInput = Console.ReadLine() ?? "";
+
+            int quantity;
+
+            if (string.IsNullOrWhiteSpace(qtyInput))
+                quantity = oldProduct?.ProductCount ?? 0;
+            else
+                int.TryParse(qtyInput, out quantity);
+
+            Console.WriteLine("Choose Category:");
+
+            var categories = Enum.GetValues(typeof(BO.ProductsCategories));
+
+            foreach (var cat in categories)
+            {
+                Console.WriteLine($"- {cat}");
+            }
+
+            Console.Write($"Enter Category (current: {oldProduct?.ProductCategory}): ");
+            string catInput = Console.ReadLine() ?? "";
+
+            BO.ProductsCategories category;
+
+            if (string.IsNullOrWhiteSpace(catInput))
+            {
+                category = oldProduct?.ProductCategory ?? BO.ProductsCategories.BREADS;
+            }
+            else
+            {
+                if (!Enum.TryParse(catInput, true, out category))
+                {
+                    Console.WriteLine("Invalid category, setting default.");
+                    category = BO.ProductsCategories.BREADS;
+                }
+            }
+
+            return new BO.Product
+            {
+                ProductId = id,
+                ProductName = name,
+                ProductPrice = price,
+                ProductCount = quantity,
+                ProductCategory = category
+            };
+        }
+
+        private static BO.Sale InputSale(BO.Sale? oldSale = null)
+        {
+            int id = oldSale?.SaleId ?? 0;
+
+            Console.Write($"Enter Product ID (current: {oldSale?.ProductId}): ");
+            string prodIdInput = Console.ReadLine() ?? "";
+
+            int productId = string.IsNullOrWhiteSpace(prodIdInput)
+                ? (oldSale?.ProductId ?? 0)
+                : int.Parse(prodIdInput);
+
+            Console.Write($"Enter Required Quantity (current: {oldSale?.ProductsCountToSale}): ");
+            string qtyInput = Console.ReadLine() ?? "";
+
+            int requiredQuantity = string.IsNullOrWhiteSpace(qtyInput)
+                ? (oldSale?.ProductsCountToSale ?? 0)
+                : int.Parse(qtyInput);
+
+            Console.Write($"Enter Discounted Price (current: {oldSale?.PriceAfterSale}): ");
+            string priceInput = Console.ReadLine() ?? "";
+
+            double discountedPrice = string.IsNullOrWhiteSpace(priceInput)
+                ? (oldSale?.PriceAfterSale ?? 0)
+                : double.Parse(priceInput);
+
+            Console.Write($"Club Customers Only? (y/n, current: {(oldSale?.OnlyClubCustomers == true ? "y" : "n")}): ");
+            string clubInput = Console.ReadLine()?.ToLower() ?? "";
+
+            bool isClub;
+
+            if (string.IsNullOrWhiteSpace(clubInput))
+                isClub = oldSale?.OnlyClubCustomers ?? false;
+            else
+                isClub = clubInput == "y";
+
+            Console.Write($"Enter Start Date (yyyy-mm-dd, current: {oldSale?.DateStart:d}): ");
+            string startInput = Console.ReadLine() ?? "";
+
+            DateTime? startDate;
+
+            if (string.IsNullOrWhiteSpace(startInput))
+                startDate = oldSale?.DateStart;
+            else
+                startDate = DateTime.Parse(startInput);
+
+            Console.Write($"Enter End Date (yyyy-mm-dd, current: {oldSale?.DateEnd:d}): ");
+            string endInput = Console.ReadLine() ?? "";
+
+            DateTime? endDate;
+
+            if (string.IsNullOrWhiteSpace(endInput))
+                endDate = oldSale?.DateEnd;
+            else
+                endDate = DateTime.Parse(endInput);
+
+            return new BO.Sale
+            {
+                SaleId = id,
+                ProductId = productId,
+                ProductsCountToSale = requiredQuantity,
+                PriceAfterSale = discountedPrice,
+                OnlyClubCustomers = isClub,
+                DateStart = startDate,
+                DateEnd = endDate
+            };
+        }
+
+        #endregion
+
+        #region Menus
+
+        private static void DisplayMainMenu()
+        {
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.WriteLine("\n======= BL Main Menu =======");
+                Console.WriteLine("1. Products Management");
+                Console.WriteLine("2. Customers Management");
+                Console.WriteLine("3. Sales Management");
+                Console.WriteLine("4. Orders Management");
+                Console.WriteLine("5. Exit");
+
+                Console.Write("Select an option: ");
+
+                var choice = Console.ReadLine()?.Trim();
+
+                switch (choice)
+                {
+                    case "1":
+                        ProductMenu();
+                        break;
+
+                    case "2":
+                        CustomerMenu();
+                        break;
+
+                    case "3":
+                        SaleMenu();
+                        break;
+
+                    case "4":
+                        OrderMenu();
+                        break;
+
+                    case "5":
+                        exit = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid choice.");
+                        break;
+                }
+            }
+        }
+
+        private static void ProductMenu()
+        {
+            Console.WriteLine("Products Menu");
+        }
+
+        private static void CustomerMenu()
+        {
+            Console.WriteLine("Customers Menu");
+        }
+
+        private static void OrderMenu()
+        {
+            Console.WriteLine("Orders Menu");
+
+            try
+            {
+                Console.Write("Enter Customer ID for order (or empty to skip): ");
+                var custInput = Console.ReadLine()?.Trim();
+                int.TryParse(custInput, out int custId); // optional
+
+                Console.Write("Enter Product ID: ");
+                var prodInput = Console.ReadLine()?.Trim();
+                if (!int.TryParse(prodInput, out int prodId))
+                {
+                    Console.WriteLine("Invalid product id.");
+                    return;
+                }
+
+                Console.Write("Enter Quantity: ");
+                var qtyInput = Console.ReadLine()?.Trim();
+                if (!int.TryParse(qtyInput, out int qty) || qty <= 0)
+                {
+                    Console.WriteLine("Invalid quantity.");
+                    return;
+                }
+
+                Console.Write("Is preferred customer? (y/n): ");
+                var prefInput = Console.ReadLine()?.Trim().ToLower();
+                bool isPreferred = prefInput == "y";
+
+                // Build a ProductInOrder and call BL to search applicable sales
+                var productInOrder = new BO.ProductInOrder
+                {
+                    ProductId = prodId,
+                    Count = qty
+                };
+
+                s_bl.Order.SearchSaleForProduct(productInOrder, isPreferred);
+
+                var sales = productInOrder.Sales;
+                if (sales == null || sales.Count == 0)
+                {
+                    Console.WriteLine("No applicable sales found for this product/quantity.");
+                }
+                else
+                {
+                    Console.WriteLine("Applicable sales:");
+                    foreach (var s in sales)
+                    {
+                        Console.WriteLine($"- SaleId: {s.SaleId}, PriceAfterSale: {s.PriceAfterSale}, MinQty: {s.ProductsCountToSale}, OnlyClub: {s.OnlyClubCustomers}");
+                    }
+                }
+
+                // Note: AddProductToOrder / DoOrder are not implemented in BL yet.
+                Console.WriteLine("(Search completed via BL. To place an order implement AddProductToOrder/DoOrder in BL.)");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error while calling BL: " + ex.Message);
+            }
+        }
+
+        private static void SaleMenu()
+        {
+            Console.WriteLine("Sales Menu");
+        }
+
+        #endregion
+    }
+}

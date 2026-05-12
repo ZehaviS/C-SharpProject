@@ -1,0 +1,85 @@
+﻿using System;
+using System.Linq;
+using System.Windows.Forms;
+using BlApi;
+using BO;
+
+namespace UI
+{
+    internal class ProductForm : Form
+    {
+        private readonly IBl _bl;
+        private readonly DataGridView _grid = new DataGridView { Dock = DockStyle.Top, Height = 300 };
+        private readonly TextBox _filterBox = new TextBox { Left = 20, Top = 320, Width = 300 };
+        private readonly Button _btnFilter = new Button { Text = "סינון לפי שם", Left = 340, Top = 318 };
+        private readonly Button _btnRefresh = new Button { Text = "רענון", Left = 320, Top = 360 };
+
+        public ProductForm(IBl bl)
+        {
+            _bl = bl;
+            Text = "מוצרים";
+            Width = 700;
+            Height = 460;
+
+            Controls.Add(_grid);
+            Controls.Add(_filterBox);
+            Controls.Add(_btnFilter);
+            Controls.Add(_btnRefresh);
+
+            _grid.ReadOnly = true;
+            _grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            _grid.MultiSelect = false;
+
+            _btnFilter.Click += BtnFilter_Click;
+            _btnRefresh.Click += (_, _) => LoadData();
+
+            LoadData();
+        }
+
+        private void LoadData()
+        {
+            try
+            {
+                var list = _bl.Product.ReadAll().Where(p => p != null).Select(p => new
+                {
+                    Id = p!.ProductId,
+                    Name = p!.ProductName,
+                    Price = p!.Price
+                }).ToList();
+
+                _grid.DataSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בקריאה");
+            }
+        }
+
+        private void BtnFilter_Click(object? sender, EventArgs e)
+        {
+            var txt = _filterBox.Text?.Trim();
+            try
+            {
+                if (string.IsNullOrEmpty(txt))
+                {
+                    LoadData();
+                    return;
+                }
+
+                var list = _bl.Product.ReadAll(p => p != null && p.ProductName.Contains(txt, StringComparison.CurrentCultureIgnoreCase))
+                    .Where(p => p != null).Select(p => new
+                    {
+                        Id = p!.ProductId,
+                        Name = p!.ProductName,
+                        Price = p!.Price
+                    }).ToList();
+
+                _grid.DataSource = list;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "שגיאה בסינון");
+            }
+        }
+    }
+}

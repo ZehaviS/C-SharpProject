@@ -1,0 +1,61 @@
+﻿// ...existing code...
+using DalApi;
+using DO;
+using static Dal.DataSource;
+
+namespace Dal;
+
+internal class ImplementationSale : Isale
+{
+
+    public int Create(Sale item)
+                                              
+    {
+        Sale s=item with { SaleId = Config.GetNextProductId() };
+        Sales.Add(s);
+        return s.ProductId;
+    }
+    public Sale? Read(int id)
+    {
+        int itemIndex = Sales.FindIndex(p => p?.SaleId == id);
+        if (itemIndex == -1)
+        {
+            throw new DalItemNotFoundException("item not found");
+
+        }
+        return Sales[itemIndex];
+
+    }
+
+
+
+
+    public List<Sale> ReadAll()
+    {
+        return Sales;
+    }
+    public void Update(Sale item)
+    {
+        int itemIndex = Sales.FindIndex(p => p?.SaleId == item.SaleId);
+        if (itemIndex == -1)
+        {
+            throw new DalItemNotFoundException("item not found");
+
+        }
+        Sales[itemIndex] = item;
+
+    }
+
+    public void Delete(int id)
+    {
+        int itemIndex = Sales.FindIndex(p => p?.SaleId == id);
+        if (itemIndex == -1)
+        {
+            throw new DalItemNotFoundException("item not found");
+
+        }
+        Sales.RemoveAt(itemIndex);
+    }
+
+}
+// ...existing code...

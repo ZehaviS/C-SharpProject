@@ -1,0 +1,61 @@
+﻿using System.Linq;
+using DalApi;
+using DO;
+using static Dal.DataSource;
+
+namespace Dal;
+
+internal class ImplementationCustomer : Icustomer
+{
+
+    public int Create(Customer customer)
+    {
+        int itemIndex = Customers.FindIndex(p => p?.CustomerId == customer.CustomerId);
+        if(itemIndex !=-1)
+        {
+            throw new CustomerApperException("customer apper");
+        }
+        Customers.Add(customer);
+        return customer.CustomerId;
+    }
+    public Customer? Read(int id)
+    {
+        int itemIndex = Customers.FindIndex(p => p?.CustomerId == id);
+        if (itemIndex == -1)
+        {
+            throw new ItemNotFoundException("customer not found");
+        }
+       return Customers[itemIndex];
+    }
+
+
+
+    public List<Customer> ReadAll()
+    {
+        return Customers;
+    }
+    public void Update(Customer item)
+    {
+        int itemIndex = Customers.FindIndex(p => p?.CustomerId == item.CustomerId);
+        if (itemIndex == -1)
+        {
+            throw new ItemNotFoundException("customer not found");
+        }
+        Customers.RemoveAt(itemIndex);
+        Customers.Add(item);
+
+    }
+
+    public void Delete(int id)
+    {
+        // use LINQ to find the customer instance by id
+        var existing = Customers.FirstOrDefault(c => c?.CustomerId == id);
+        if (existing is null)
+        {
+            throw new ItemNotFoundException("customer not found");
+        }
+        // Remove(object) uses equality; removes the found instance
+        Customers.Remove(existing);
+    }
+
+}

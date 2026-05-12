@@ -1,0 +1,13 @@
+﻿
+namespace BO;
+
+public class Order
+{
+    public Order() { }
+    public int Id { get; set; }
+    public bool IsPreferedCustomer { get; set; }
+    public List<ProductInOrder>? ProductInOrder { get; set; }
+    public double TotalPrice { get; set; }
+  
+
+}

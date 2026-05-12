@@ -1,0 +1,12 @@
+﻿
+
+namespace BO;
+
+internal class Product
+{
+    public int ProductId { get; init; }
+    public string ProductName { get; set; }
+    public ProductsCategories ProductCategory { get; set; }
+    public double ProductPrice { get; set; }
+    public int ProductCount { get; set; }
+}

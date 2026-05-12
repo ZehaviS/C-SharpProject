@@ -1,0 +1,13 @@
+﻿
+namespace BO;
+
+internal class SaleInProduct
+{
+    public int SaleId { get; set; }
+    public int ProductsCountToSale { get; set; }
+    public double PriceAfterSale { get; set; }
+    public bool OnlyClubCustomers { get; set; }
+    // תכונות תאריכים נוספו כדי לאפשר מיפוי מ-DO.Sale (DateStart/DateEnd)
+    public DateTime? DateStart { get; set; }
+    public DateTime? DateEnd { get; set; }
+}
