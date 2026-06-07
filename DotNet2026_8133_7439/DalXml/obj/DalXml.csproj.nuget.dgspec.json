@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj": {}
+    "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj": {}
   },
   "projects": {
-    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+    "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
+        "projectUniqueName": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
         "projectName": "DalFacade",
-        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
+        "projectPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\obj\\",
+        "outputPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -71,14 +71,14 @@
         }
       }
     },
-    "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj": {
+    "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj",
+        "projectUniqueName": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj",
         "projectName": "DalXml",
-        "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj",
+        "projectPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalXml\\DalXml.csproj",
         "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
-        "outputPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalXml\\obj\\",
+        "outputPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalXml\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -101,8 +101,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
-                "projectPath": "G:\\אאאחדשC# עם טובי  א\\Project-dotnet\\Project-dotnet\\Project\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
+              "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
+                "projectPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
               }
             }
           }

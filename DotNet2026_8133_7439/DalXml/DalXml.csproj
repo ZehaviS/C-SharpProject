@@ -4,37 +4,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-      <BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
-    <OutputPath>$(SolutionDir)\bin\</OutputPath>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-    <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
-    <RootNamespace>Dal </RootNamespace>
+    <BaseOutputPath>$(MSBuildProjectDirectory)\..\bin\</BaseOutputPath>
+    <RootNamespace>Dal</RootNamespace>
+	  <OutputPath>$(MSBuildProjectDirectory)\..\bin\</OutputPath>
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	  <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
 
   </PropertyGroup>
 
-  <!-- Ensure Config.cs is compiled so Config static class is available to Implementation files -->
-
   <ItemGroup>
     <ProjectReference Include="..\DalFacade\DalFacade.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="xml\customers.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="xml\dal-config.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="xml\data-config.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="xml\products.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="xml\sales.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

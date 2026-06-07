@@ -24,3 +24,17 @@ Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotne
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\refint\BL.dll
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.pdb
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\ref\BL.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfo.cs
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.sourcelink.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.Up2Date
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\refint\BL.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\BL.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BL\obj\Debug\ref\BL.dll

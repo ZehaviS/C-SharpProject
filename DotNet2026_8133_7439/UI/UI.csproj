@@ -6,8 +6,8 @@
 		<Nullable>enable</Nullable>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
-		<OutputPath>$(SolutionDir)\bin\</OutputPath>
+		<BaseOutputPath>$(MSBuildProjectDirectory)\..\bin\</BaseOutputPath>
+		<OutputPath>$(MSBuildProjectDirectory)\..\bin\</OutputPath>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 		<UseCommonOutputDirectory>true</UseCommonOutputDirectory>

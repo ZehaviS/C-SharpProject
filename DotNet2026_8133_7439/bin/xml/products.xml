@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <ProductId>1020</ProductId>
+    <ProductName>Sourdough Loaf</ProductName>
+    <ProductCategory>BREADS</ProductCategory>
+    <ProductPrice>18</ProductPrice>
+    <ProductCount>80</ProductCount>
+  </Product>
+  <Product>
+    <ProductId>1021</ProductId>
+    <ProductName>Chocolate Croissant</ProductName>
+    <ProductCategory>DIARY_PASTRY</ProductCategory>
+    <ProductPrice>10</ProductPrice>
+    <ProductCount>120</ProductCount>
+  </Product>
+  <Product>
+    <ProductId>1022</ProductId>
+    <ProductName>Raisin Brioche</ProductName>
+    <ProductCategory>FUR_PASTRY</ProductCategory>
+    <ProductPrice>12</ProductPrice>
+    <ProductCount>60</ProductCount>
+  </Product>
+  <Product>
+    <ProductId>1023</ProductId>
+    <ProductName>Vanilla Cheesecake</ProductName>
+    <ProductCategory>SHOWCASE_CAKES</ProductCategory>
+    <ProductPrice>160</ProductPrice>
+    <ProductCount>10</ProductCount>
+  </Product>
+  <Product>
+    <ProductId>1024</ProductId>
+    <ProductName>Cafe Latte</ProductName>
+    <ProductCategory>DRINKS</ProductCategory>
+    <ProductPrice>14</ProductPrice>
+    <ProductCount>100</ProductCount>
+  </Product>
+</ArrayOfProduct>

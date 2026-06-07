@@ -9,31 +9,32 @@ public static class Initialization
     public static void Initialize()
     {
         s_dal= DalApi.Factory.Get;
-        createCustomers();
-        createProducts();
-        createSales();
+        // Run initialization but tolerate duplicates so initialization is idempotent
+        try { createCustomers(); } catch { /* ignore duplicates or init errors */ }
+        try { createProducts(); } catch { /* ignore duplicates or init errors */ }
+        try { createSales(); } catch { /* ignore duplicates or init errors */ }
     }
     private static void createSales()
     {
-        s_dal.sale.Create(new Sale(1, 1, 10, 2.5, true,DateTime.Now, DateTime.Now.AddMonths(1)));
-        s_dal.sale.Create(new Sale(2, 2, 10, 2, true, DateTime.Now, DateTime.Now.AddMonths(1)));
-        s_dal.sale.Create(new Sale(3, 3, 3, 4, false, DateTime.Now, DateTime.Now.AddMonths(1)));
-        s_dal.sale.Create(new Sale(4, 4, 5, 3, false, DateTime.Now, DateTime.Now.AddMonths(1)));
-        s_dal.sale.Create(new Sale(5, 5, 1, 135, true, DateTime.Now, DateTime.Now.AddMonths(1)));
+        try { s_dal.sale.Create(new Sale(1, 1, 20, 3.5, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(2, 2, 15, 2.5, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(3, 3, 10, 4.0, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(4, 4, 5, 35.0, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(5, 5, 12, 6.0, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
     }
     private static void createProducts()
     {
-        s_dal.product.Create(new Product(1, "Cheese borax", ProductsCategories.DIARY_PASTRY,3,50));
-        s_dal.product.Create(new Product(2, "Potato borax", ProductsCategories.FUR_PASTRY, 2.1, 90));
-        s_dal.product.Create(new Product(3, "Ice coffee", ProductsCategories.DRINKS, 5, 200));
-        s_dal.product.Create(new Product(4, "Baguette", ProductsCategories.BREADS, 4.5, 100));
-        s_dal.product.Create(new Product(5, "Birthday cake", ProductsCategories.SHOWCASE_CAKES, 150, 10));
+        try { s_dal.product.Create(new Product(1, "Sourdough Loaf", ProductsCategories.BREADS, 18, 80)); } catch { }
+        try { s_dal.product.Create(new Product(2, "Chocolate Croissant", ProductsCategories.DIARY_PASTRY, 10, 120)); } catch { }
+        try { s_dal.product.Create(new Product(3, "Raisin Brioche", ProductsCategories.FUR_PASTRY, 12, 60)); } catch { }
+        try { s_dal.product.Create(new Product(4, "Vanilla Cheesecake", ProductsCategories.SHOWCASE_CAKES, 160, 10)); } catch { }
+        try { s_dal.product.Create(new Product(5, "Cafe Latte", ProductsCategories.DRINKS, 14, 100)); } catch { }
 
     }
     private static void createCustomers()
     {
-        s_dal.customer.Create(new Customer(329427439,"Tovi Zak","Netivot Hamishpat 89","0527189210"));
-        s_dal.customer.Create(new Customer(328328133, "Zehavi Sabo", "Netivot Shalom 10", "0556758544"));
+        try { s_dal.customer.Create(new Customer(329427439,"Tovi Zak","Netivot Hamishpat 89","0527189210")); } catch { }
+        try { s_dal.customer.Create(new Customer(328328133, "Zehavi Sabo", "Netivot Shalom 10", "0556758544")); } catch { }
 
     }
 }

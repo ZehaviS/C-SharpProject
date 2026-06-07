@@ -4,8 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	  <BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
-	  <OutputPath>$(SolutionDir)\bin\</OutputPath>
+	  <BaseOutputPath>$(MSBuildProjectDirectory)\..\bin\</BaseOutputPath>
+	  <OutputPath>$(MSBuildProjectDirectory)\..\bin\</OutputPath>
 	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	  <UseCommonOutputDirectory>true</UseCommonOutputDirectory>
@@ -13,5 +13,12 @@
 	  <RootNamespace></RootNamespace>
 	  
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\xml\**\*">
+      <Link>xml\%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

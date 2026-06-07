@@ -1,48 +1,66 @@
 ﻿using System;
-using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace Dal
 {
     internal static class Config
     {
-        // file name without extension
-        private static readonly string s_fileName = "data-config";
+        private static readonly string fileName = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "xml", "data-config.xml");
+        private static readonly XElement dataConfig = LoadConfig();
 
-        private static string FilePath => Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "xml", s_fileName + ".xml");
+        private static XElement LoadConfig()
+        {
+            string? directory = Path.GetDirectoryName(fileName);
+            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
 
-        private static XElement Load() => XElement.Load(FilePath);
+            if (!File.Exists(fileName))
+            {
+                var defaultConfig = new XElement("config",
+                    new XElement("ProductNum", 1000),
+                    new XElement("SaleNum", 1));
+                defaultConfig.Save(fileName);
+                return defaultConfig;
+            }
 
-        public static int ProductNum
+            using var stream = File.OpenRead(fileName);
+            return XElement.Load(stream);
+        }
+
+        private static int productId;
+
+        public static int GetProductId
         {
             get
             {
-                var root = Load();
-                var elem = root.Element("ProductNum");
-                int val = int.Parse(elem?.Value ?? "0");
-                int next = val + 1;
-                elem.Value = next.ToString();
-                root.Save(FilePath);
-                return val;
+                int currentProId = int.Parse(dataConfig.Element("ProductNum").Value);
+                dataConfig.Element("ProductNum").SetValue((currentProId + 1).ToString());
+                dataConfig.Save(fileName);
+                return currentProId;
             }
         }
 
-        public static int SaleNum
+
+        private static int saleId;
+
+        public static int GetSaleId
         {
             get
             {
-                var root = Load();
-                var elem = root.Element("SaleNum");
-                int val = int.Parse(elem?.Value ?? "0");
-                int next = val + 1;
-                elem.Value = next.ToString();
-                root.Save(FilePath);
-                return val;
+                int currentSaleId = int.Parse(dataConfig.Element("SaleNum").Value);
+                dataConfig.Element("SaleNum").SetValue((currentSaleId + 1).ToString());
+                dataConfig.Save(fileName);
+                return currentSaleId;
             }
-        }
 
-       
+
+        }
     }
 }

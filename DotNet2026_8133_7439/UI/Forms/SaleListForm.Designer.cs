@@ -42,6 +42,7 @@ namespace UI.Forms
             this.txtFilter.Location = new System.Drawing.Point(12, 12);
             this.txtFilter.Name = "txtFilter";
             this.txtFilter.Size = new System.Drawing.Size(300, 23);
+            this.txtFilter.PlaceholderText = "Search by saleId";
 
             // btnSearch
             this.btnSearch.Location = new System.Drawing.Point(320, 10);

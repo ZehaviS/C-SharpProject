@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  
-	  <BaseOutputPath>$(SolutionDir)\bin\</BaseOutputPath>
-	  <OutputPath>$(SolutionDir)\bin\</OutputPath>
+	  <BaseOutputPath>$(MSBuildProjectDirectory)\..\bin\</BaseOutputPath>
+	  <OutputPath>$(MSBuildProjectDirectory)\..\bin\</OutputPath>
 	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
 	  <UseCommonOutputDirectory>true</UseCommonOutputDirectory>

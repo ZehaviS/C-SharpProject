@@ -45,3 +45,29 @@ Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotne
 G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.ProductForm.resources
 G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.OrderListForm.resources
 G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.SaleForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Form1.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.CustomerForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.CustomerListForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.OrderForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.OrderListForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.ProductForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.SaleForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.Forms.SaleListForm.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.csproj.GenerateResource.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.AssemblyInfoInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.AssemblyInfo.cs
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.sourcelink.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\refint\UI.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\UI.exe
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\UI.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\UI.runtimeconfig.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\UI.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\UI.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.csproj.Up2Date
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\UI.genruntimeconfig.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\UI\obj\Debug\ref\UI.dll

@@ -30,3 +30,25 @@ Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotne
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.pdb
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.genruntimeconfig.cache
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DalTest.dll
+D:\bin\DalTest.exe
+D:\bin\DalTest.deps.json
+D:\bin\DalTest.runtimeconfig.json
+D:\bin\DalTest.dll
+D:\bin\DalTest.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalTest.exe
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalTest.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalTest.runtimeconfig.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalTest.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.csproj.AssemblyReference.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.AssemblyInfoInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.AssemblyInfo.cs
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.csproj.CoreCompileInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.sourcelink.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.csproj.Up2Date
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\refint\DalTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\DalTest.genruntimeconfig.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DelTest\obj\Debug\ref\DalTest.dll

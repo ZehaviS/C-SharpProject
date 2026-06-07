@@ -30,3 +30,20 @@ Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotne
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.pdb
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
 Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BlTest\obj\Debug\ref\BlTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BlTest.exe
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BlTest.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BlTest.runtimeconfig.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BlTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BlTest.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.csproj.AssemblyReference.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.AssemblyInfoInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.AssemblyInfo.cs
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.csproj.CoreCompileInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.sourcelink.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.csproj.Up2Date
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\refint\BlTest.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\BlTest.genruntimeconfig.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\BlTest\obj\Debug\ref\BlTest.dll

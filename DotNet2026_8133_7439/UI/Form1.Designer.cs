@@ -32,7 +32,6 @@ namespace UI
         private System.Windows.Forms.Button btnProducts;
         private System.Windows.Forms.Button btnSales;
         private System.Windows.Forms.Button btnOrder;
-        private System.Windows.Forms.Button btnMigrate;
 
         private void InitializeComponent()
         {
@@ -41,7 +40,6 @@ namespace UI
             this.btnProducts = new System.Windows.Forms.Button();
             this.btnSales = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
-            this.btnMigrate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCustomers
@@ -84,16 +82,6 @@ namespace UI
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
-            // btnMigrate
-            // 
-            this.btnMigrate.Location = new System.Drawing.Point(30, 230);
-            this.btnMigrate.Name = "btnMigrate";
-            this.btnMigrate.Size = new System.Drawing.Size(150, 40);
-            this.btnMigrate.TabIndex = 4;
-            this.btnMigrate.Text = "Migrate List->Xml";
-            this.btnMigrate.UseVisualStyleBackColor = true;
-            this.btnMigrate.Click += new System.EventHandler(this.btnMigrate_Click);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,7 +90,6 @@ namespace UI
             this.Controls.Add(this.btnSales);
             this.Controls.Add(this.btnProducts);
             this.Controls.Add(this.btnCustomers);
-            this.Controls.Add(this.btnMigrate);
             this.Name = "Form1";
             this.Text = "Store POS";
             this.ResumeLayout(false);

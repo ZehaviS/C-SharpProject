@@ -34,20 +34,19 @@ namespace UI.Forms
             {
                 var sale = new Sale
                 {
-                    // ❌ אין SaleId ביצירה!
+                    SaleId = _sale?.SaleId ?? 0,
                     ProductId = int.Parse(txtProductId.Text),
                     ProductsCountToSale = int.Parse(txtCount.Text),
                     PriceAfterSale = double.Parse(txtPrice.Text),
                     OnlyClubCustomers = chkClub.Checked,
-                    DateStart = null,
-                    DateEnd = null
+                    DateStart = _sale?.DateStart,
+                    DateEnd = _sale?.DateEnd
                 };
 
                 if (_sale == null)
                     _bl.Sale.Create(sale);
                 else
                 {
-                    //sale.SaleId = _sale.SaleId; // רק בעריכה
                     _bl.Sale.Update(sale);
                 }
 

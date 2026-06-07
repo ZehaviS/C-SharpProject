@@ -12,7 +12,19 @@ public static class Factory
             string dalType = s_dalName ?? throw new DalConfigException($"DAL name is not extracted from the configuration");
             string dal = s_dalPackages[dalType] ?? throw new DalConfigException($"Package for {dalType} is not found in packages list in dal-config.xml");
 
-            try { Assembly.Load(dal ?? throw new DalConfigException($"Package {dal} is null")); }
+            try
+            {
+                string asmFile = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dal + ".dll");
+                if (File.Exists(asmFile))
+                {
+                    Assembly.LoadFrom(asmFile);
+                }
+                else
+                {
+                    // fallback to loading by assembly simple name
+                    Assembly.Load(dal ?? throw new DalConfigException($"Package {dal} is null"));
+                }
+            }
             catch (Exception ex) { throw new DalConfigException($"Failed to load {dal}.dll package", ex); }
 
             Type type = Type.GetType($"Dal.{dal}, {dal}") ??
