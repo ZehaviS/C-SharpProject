@@ -30,7 +30,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "DalFacade": "1.0.0"
+          "DalFacade": "1.0.0",
+          "Tools": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DalList.dll": {}
@@ -44,13 +45,24 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "DalFacade": "1.0.0",
-          "DalList": "1.0.0"
+          "DalList": "1.0.0",
+          "Tools": "1.0.0"
         },
         "compile": {
           "bin/placeholder/DalTest.dll": {}
         },
         "runtime": {
           "bin/placeholder/DalTest.dll": {}
+        }
+      },
+      "Tools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Tools.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tools.dll": {}
         }
       }
     }
@@ -75,6 +87,11 @@
       "type": "project",
       "path": "../DelTest/DalTest.csproj",
       "msbuildProject": "../DelTest/DalTest.csproj"
+    },
+    "Tools/1.0.0": {
+      "type": "project",
+      "path": "../Tools/Tools.csproj",
+      "msbuildProject": "../Tools/Tools.csproj"
     }
   },
   "projectFileDependencyGroups": {

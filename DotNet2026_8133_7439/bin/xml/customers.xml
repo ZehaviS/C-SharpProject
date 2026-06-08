@@ -2,14 +2,38 @@
 <ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Customer>
     <CustomerId>328328133</CustomerId>
-    <CustomerName>Zehavi Sabo</CustomerName>
-    <CustomerAddress>Netivot Shalom 10</CustomerAddress>
+    <CustomerName>Zheavi</CustomerName>
+    <CustomerAddress>1555</CustomerAddress>
     <CustomerPhone>0556758544</CustomerPhone>
   </Customer>
   <Customer>
-    <CustomerId>329427439</CustomerId>
-    <CustomerName>Tovi Zak</CustomerName>
-    <CustomerAddress>Netivot Hamishpat 89</CustomerAddress>
-    <CustomerPhone>0527189210</CustomerPhone>
+    <CustomerId>328328134</CustomerId>
+    <CustomerName>Yazid</CustomerName>
+    <CustomerAddress>1556</CustomerAddress>
+    <CustomerPhone>0556758545</CustomerPhone>
+  </Customer>
+  <Customer>
+    <CustomerId>328328135</CustomerId>
+    <CustomerName>Yazid</CustomerName>
+    <CustomerAddress>1557</CustomerAddress>
+    <CustomerPhone>0556758546</CustomerPhone>
+  </Customer>
+  <Customer>
+    <CustomerId>328328136</CustomerId>
+    <CustomerName>Yazid</CustomerName>
+    <CustomerAddress>1558</CustomerAddress>
+    <CustomerPhone>0556758547</CustomerPhone>
+  </Customer>
+  <Customer>
+    <CustomerId>328328137</CustomerId>
+    <CustomerName>Yazid</CustomerName>
+    <CustomerAddress>1559</CustomerAddress>
+    <CustomerPhone>0556758548</CustomerPhone>
+  </Customer>
+  <Customer>
+    <CustomerId>328328138</CustomerId>
+    <CustomerName>Yazid</CustomerName>
+    <CustomerAddress>1560</CustomerAddress>
+    <CustomerPhone>0556758549</CustomerPhone>
   </Customer>
 </ArrayOfCustomer>

@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfCustomer>
 	<Customer>
-		<id>328328133</id>
-		<customer_name>Zheavi</customer_name>
-		<customer_adress>1555</customer_adress>
-		<customer_phon>0556758544</customer_phon>
-		<isClubMember>true</isClubMember>
+		<CustomerId>328328133</CustomerId>
+		<CustomerName>Zheavi</CustomerName>
+		<CustomerAddress>1555</CustomerAddress>
+		<CustomerPhone>0556758544</CustomerPhone>
+	</Customer>
+	<Customer>
+		<CustomerId>328328134</CustomerId>
+		<CustomerName>Yazid</CustomerName>
+		<CustomerAddress>1556</CustomerAddress>
+		<CustomerPhone>0556758545</CustomerPhone>
+	</Customer>
+	<Customer>
+		<CustomerId>328328135</CustomerId>
+		<CustomerName>Yazid</CustomerName>
+		<CustomerAddress>1557</CustomerAddress>
+		<CustomerPhone>0556758546</CustomerPhone>
+	</Customer>
+	<Customer>
+		<CustomerId>328328136</CustomerId>
+		<CustomerName>Yazid</CustomerName>
+		<CustomerAddress>1558</CustomerAddress>
+		<CustomerPhone>0556758547</CustomerPhone>
+	</Customer>
+	<Customer>
+		<CustomerId>328328137</CustomerId>
+		<CustomerName>Yazid</CustomerName>
+		<CustomerAddress>1559</CustomerAddress>
+		<CustomerPhone>0556758548</CustomerPhone>
+	</Customer>
+	<Customer>
+		<CustomerId>328328138</CustomerId>
+		<CustomerName>Yazid</CustomerName>
+		<CustomerAddress>1560</CustomerAddress>
+		<CustomerPhone>0556758549</CustomerPhone>
 	</Customer>
 </ArrayOfCustomer>

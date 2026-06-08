@@ -8,6 +8,5 @@ public class Order
     public bool IsPreferedCustomer { get; set; }
     public List<ProductInOrder>? ProductInOrder { get; set; }
     public double TotalPrice { get; set; }
-  
-
+    public double DiscountApplied { get; set; }
 }

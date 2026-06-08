@@ -88,6 +88,11 @@ D:\bin\dal-config.xml
 D:\bin\data-config.xml
 D:\bin\products.xml
 D:\bin\sales.xml
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\customers.xml
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\dal-config.xml
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\data-config.xml
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\products.xml
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\sales.xml
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalFacade.deps.json
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalFacade.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalFacade.pdb
@@ -100,8 +105,3 @@ D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalFacade\obj\Debug\D
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalFacade\obj\Debug\refint\DalFacade.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalFacade\obj\Debug\DalFacade.pdb
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalFacade\obj\Debug\ref\DalFacade.dll
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\customers.xml
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\dal-config.xml
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\data-config.xml
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\products.xml
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\xml\sales.xml

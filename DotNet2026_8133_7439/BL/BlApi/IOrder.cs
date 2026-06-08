@@ -1,16 +1,13 @@
-﻿
-using BO;
+﻿using System.Collections.Generic;
 
 namespace BlApi;
 
 public interface IOrder
 {
-    List<SaleInProduct> AddProductToOrder(Order order, int productId, int count);
-    void CalcTotalPriceForProduct(ProductInOrder productInOrder);
-    void CalcTotalPrice(Order order);
-    void DoOrder(Order order);
-    void SearchSaleForProduct(ProductInOrder productInOrder, bool isPreferedCustomer);
-   
-
+    BO.Order CreateOrder(bool isPreferredClient = false);
+    List<BO.SaleInProduct> AddProductToOrder(BO.Order order, int productId, int quantity);
+    void CalcTotalPriceForProduct(BO.ProductInOrder productInOrder);
+    void CalcTotalPrice(BO.Order order);
+    void DoOrder(BO.Order order);
+    void SearchSaleForProduct(BO.ProductInOrder productInOrder, bool isPreferredClient);
 }
-

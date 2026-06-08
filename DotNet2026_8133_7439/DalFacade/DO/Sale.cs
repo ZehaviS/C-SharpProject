@@ -7,6 +7,7 @@ public record Sale
     int ProductId,
     int ProductsCountToSale,
     double PriceAfterSale,
+    double Discount,
     bool OnlyClubCustomers,
     DateTime? DateStart,
     DateTime? DateEnd
@@ -14,7 +15,7 @@ public record Sale
 )
 
 {
-    public Sale() : this(0, 0,1,0,false,DateTime.Now,DateTime.Now)
+    public Sale() : this(0, 0, 1, 0, 0, false, DateTime.Now, DateTime.Now)
     {
 
     }

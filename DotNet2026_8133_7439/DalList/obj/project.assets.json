@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/DalFacade.dll": {}
         }
+      },
+      "Tools/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Tools.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Tools.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../DalFacade/DalFacade.csproj",
       "msbuildProject": "../DalFacade/DalFacade.csproj"
+    },
+    "Tools/1.0.0": {
+      "type": "project",
+      "path": "../Tools/Tools.csproj",
+      "msbuildProject": "../Tools/Tools.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DalFacade >= 1.0.0"
+      "DalFacade >= 1.0.0",
+      "Tools >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -63,6 +79,9 @@
           "projectReferences": {
             "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj": {
               "projectPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\DalFacade\\DalFacade.csproj"
+            },
+            "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\Tools\\Tools.csproj": {
+              "projectPath": "D:\\תכנות-זהבי\\C-SharpProject\\DotNet2026_8133_7439\\Tools\\Tools.csproj"
             }
           }
         }

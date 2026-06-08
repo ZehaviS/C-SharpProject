@@ -38,6 +38,7 @@ namespace BlImplementation
             ProductId = d.ProductId,
             ProductsCountToSale = d.ProductsCountToSale,
             PriceAfterSale = d.PriceAfterSale,
+            Discount = d.Discount,
             OnlyClubCustomers = d.OnlyClubCustomers,
             DateStart = d.DateStart,
             DateEnd = d.DateEnd
@@ -48,6 +49,7 @@ namespace BlImplementation
             b.ProductId,
             b.ProductsCountToSale,
             b.PriceAfterSale,
+            b.Discount,
             b.OnlyClubCustomers,
             b.DateStart,
             b.DateEnd

@@ -16,11 +16,11 @@ public static class Initialization
     }
     private static void createSales()
     {
-        try { s_dal.sale.Create(new Sale(1, 1, 20, 3.5, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
-        try { s_dal.sale.Create(new Sale(2, 2, 15, 2.5, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
-        try { s_dal.sale.Create(new Sale(3, 3, 10, 4.0, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
-        try { s_dal.sale.Create(new Sale(4, 4, 5, 35.0, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
-        try { s_dal.sale.Create(new Sale(5, 5, 12, 6.0, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(1, 1, 20, 3.5, 10, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(2, 2, 15, 2.5, 15, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(3, 3, 10, 4.0, 20, true, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(4, 4, 5, 35.0, 5, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
+        try { s_dal.sale.Create(new Sale(5, 5, 12, 6.0, 25, false, DateTime.Now, DateTime.Now.AddMonths(1))); } catch { }
     }
     private static void createProducts()
     {

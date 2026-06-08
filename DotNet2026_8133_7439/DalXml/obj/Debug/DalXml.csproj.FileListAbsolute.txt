@@ -1,14 +1,14 @@
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.pdb
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.csproj.AssemblyReference.cache
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.GeneratedMSBuildEditorConfig.editorconfig
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.AssemblyInfoInputs.cache
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.AssemblyInfo.cs
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.csproj.CoreCompileInputs.cache
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.sourcelink.json
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.deps.json
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.csproj.Up2Date
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\refint\DalXml.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\DalXml.pdb
-D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\DalXml.pdb
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\DalXml\obj\Debug\ref\DalXml.dll

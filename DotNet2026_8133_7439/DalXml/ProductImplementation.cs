@@ -47,7 +47,7 @@ namespace Dal
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error loading customers: {ex.Message}");
+                Console.WriteLine($"Error loading products: {ex.Message}");
                 productsList = new List<Product>();
             }
         }

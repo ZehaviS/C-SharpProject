@@ -7,11 +7,7 @@ class Program
     {
         IBl bl = Factory.Get();
 
-        Order order = new Order
-        {
-            ProductInOrder = new List<ProductInOrder>(),
-            IsPreferedCustomer = false
-        };
+        var order = bl.Order.CreateOrder();
 
         while (true)
         {

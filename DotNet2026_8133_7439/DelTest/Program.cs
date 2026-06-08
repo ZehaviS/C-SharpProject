@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Reflection;
 using DalApi;
 using DO;
+using Tools;
 
 namespace DalTest;
 
@@ -10,6 +12,7 @@ class Program
 
     static void Main()
     {
+        LogManager.CleanOldLogs();
         try
         {
             Console.Write("Initialize data (y/N)? ");
@@ -23,6 +26,8 @@ class Program
         }
         catch (Exception ex)
         {
+            var method = MethodBase.GetCurrentMethod()!;
+            LogManager.LogMessage(method.DeclaringType?.FullName ?? "DelTest", method.Name, ex.ToString());
             Console.WriteLine("Unhandled exception: " + ex);
         }
     }
@@ -40,12 +45,18 @@ class Program
                     case 1: CrudEntity("Customer"); break;
                     case 2: CrudEntity("Product"); break;
                     case 3: CrudEntity("Sale"); break;
-                    case 4: exit = true; break;
+                    case 4:
+                        LogManager.CleanOldLogs();
+                        Console.WriteLine("Log folder cleaned.");
+                        break;
+                    case 5: exit = true; break;
                     default: Console.WriteLine("Unknown choice."); break;
                 }
             }
             catch (Exception ex)
             {
+                var method = MethodBase.GetCurrentMethod()!;
+                LogManager.LogMessage(method.DeclaringType?.FullName ?? "DelTest", method.Name, ex.ToString());
                 Console.WriteLine("Error: " + ex);
             }
         }
@@ -59,7 +70,8 @@ class Program
         Console.WriteLine("1. Customer");
         Console.WriteLine("2. Product");
         Console.WriteLine("3. Sale");
-        Console.WriteLine("4. Exit");
+        Console.WriteLine("4. Clean log folder");
+        Console.WriteLine("5. Exit");
         Console.Write("Select entity: ");
         var s = Console.ReadLine();
         if (int.TryParse(s, out int c)) return c;
@@ -169,13 +181,14 @@ class Program
 
         Console.Write("ProductId (int): "); int.TryParse(Console.ReadLine(), out int pid);
         Console.Write("ProductsCountToSale (int): "); int.TryParse(Console.ReadLine(), out int cnt);
-        Console.Write("PriceAfterSale (int): "); int.TryParse(Console.ReadLine(), out int price);
+        Console.Write("PriceAfterSale (double): "); double.TryParse(Console.ReadLine(), out double priceAfterSale);
+        Console.Write("Discount (double): "); double.TryParse(Console.ReadLine(), out double discount);
         Console.Write("OnlyClubCustomers (true/false): "); bool.TryParse(Console.ReadLine(), out bool only);
         Console.Write("DateStart (yyyy-MM-dd) or empty: "); string ds = Console.ReadLine() ?? "";
         DateTime? dateStart = null; if (DateTime.TryParse(ds, out var dt1)) dateStart = dt1;
         Console.Write("DateEnd (yyyy-MM-dd) or empty: "); string de = Console.ReadLine() ?? "";
         DateTime? dateEnd = null; if (DateTime.TryParse(de, out var dt2)) dateEnd = dt2;
-        var s = new Sale(0, pid, cnt, price, only, dateStart, dateEnd);
+        var s = new Sale(0, pid, cnt, priceAfterSale, discount, only, dateStart, dateEnd);
         int newId = s_dal.sale.Create(s);
         Console.WriteLine($"Created sale id: {newId}");
     }
@@ -249,13 +262,14 @@ class Program
                 Console.Write("SaleId: "); int.TryParse(Console.ReadLine(), out int id);
                 Console.Write("ProductId: "); int.TryParse(Console.ReadLine(), out int pid);
                 Console.Write("ProductsCountToSale: "); int.TryParse(Console.ReadLine(), out int cnt);
-                Console.Write("PriceAfterSale: "); int.TryParse(Console.ReadLine(), out int price);
+                Console.Write("PriceAfterSale (double): "); double.TryParse(Console.ReadLine(), out double priceAfterSale);
+                Console.Write("Discount (double): "); double.TryParse(Console.ReadLine(), out double discount);
                 Console.Write("OnlyClubCustomers (true/false): "); bool.TryParse(Console.ReadLine(), out bool only);
                 Console.Write("DateStart (yyyy-MM-dd) or empty: "); string ds = Console.ReadLine() ?? "";
                 DateTime? dateStart = null; if (DateTime.TryParse(ds, out var dt1)) dateStart = dt1;
                 Console.Write("DateEnd (yyyy-MM-dd) or empty: "); string de = Console.ReadLine() ?? "";
                 DateTime? dateEnd = null; if (DateTime.TryParse(de, out var dt2)) dateEnd = dt2;
-                var s = new Sale(id, pid, cnt, price, only, dateStart, dateEnd);
+                var s = new Sale(id, pid, cnt, priceAfterSale, discount, only, dateStart, dateEnd);
                 s_dal.sale.Update(s);
                 Console.WriteLine("Updated.");
             }

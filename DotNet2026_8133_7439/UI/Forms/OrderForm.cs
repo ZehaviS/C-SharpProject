@@ -136,6 +136,7 @@ namespace UI.Forms
                 .ToList();
 
             lblTotal.Text = _order.TotalPrice.ToString("C");
+            lblDiscount.Text = _order.DiscountApplied.ToString("C");
         }
 
         private void btnAddByCode_Click(object sender, EventArgs e)

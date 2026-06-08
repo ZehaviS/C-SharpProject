@@ -1,0 +1,12 @@
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\bin\Debug\net8.0\Tools.deps.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\bin\Debug\net8.0\Tools.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\bin\Debug\net8.0\Tools.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.Properties.Resources.resources
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.csproj.GenerateResource.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.csproj.CoreCompileInputs.cache
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.sourcelink.json
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\refint\Tools.dll
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\Tools.pdb
+D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\Tools\obj\Debug\net8.0\ref\Tools.dll

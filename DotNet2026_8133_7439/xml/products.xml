@@ -1,2 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfProduct>
+	<Product>
+		<ProductId>1001</ProductId>
+		<ProductName>Sourdough Loaf</ProductName>
+		<ProductCategory>BREADS</ProductCategory>
+		<ProductPrice>18</ProductPrice>
+		<ProductCount>80</ProductCount>
+	</Product>
+	<Product>
+		<ProductId>1002</ProductId>
+		<ProductName>Chocolate Croissant</ProductName>
+		<ProductCategory>DIARY_PASTRY</ProductCategory>
+		<ProductPrice>10</ProductPrice>
+		<ProductCount>120</ProductCount>
+	</Product>
+    <Product>
+        <ProductId>1003</ProductId>
+        <ProductName>Almond Croissant</ProductName>
+        <ProductCategory>DIARY_PASTRY</ProductCategory>
+        <ProductPrice>12</ProductPrice>
+        <ProductCount>100</ProductCount>
+    </Product>
+    <Product>
+        <ProductId>1004</ProductId>
+        <ProductName>Chocolate Chip Cookie</ProductName>
+        <ProductCategory>COOKIE</ProductCategory>
+        <ProductPrice>5</ProductPrice>
+        <ProductCount>200</ProductCount>
+    </Product>
+    <Product>
+        <ProductId>1005</ProductId>
+        <ProductName>Oatmeal Raisin Cookie</ProductName>
+        <ProductCategory>COOKIE</ProductCategory>
+        <ProductPrice>6</ProductPrice>
+        <ProductCount>150</ProductCount>
+    </Product>
+    <Product>
+        <ProductId>1006</ProductId>
+        <ProductName>Blueberry Muffin</ProductName>
+        <ProductCategory>MUFFIN</ProductCategory>
+        <ProductPrice>8</ProductPrice>
+        <ProductCount>90</ProductCount>
+    </Product>
+    <Product>
+        <ProductId>1007</ProductId>
+        <ProductName>Banana Nut Muffin</ProductName>
+        <ProductCategory>MUFFIN</ProductCategory>
+        <ProductPrice>9</ProductPrice>
+        <ProductCount>110</ProductCount>
+    </Product>
+</ArrayOfProduct>

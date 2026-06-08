@@ -1,29 +1,3 @@
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.deps.json
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.dll
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.pdb
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.AssemblyReference.cache
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfoInputs.cache
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfo.cs
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.Up2Date
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.dll
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\refint\BL.dll
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.pdb
-G:\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\ref\BL.dll
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.deps.json
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.dll
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\bin\BL.pdb
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.AssemblyReference.cache
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfoInputs.cache
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.AssemblyInfo.cs
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.csproj.Up2Date
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.dll
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\refint\BL.dll
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\BL.pdb
-Z:\יד תשפו\זק טובה\c#\אאאחדשC# עם טובי  א\Project-dotnet\Project-dotnet\Project\DotNet2026_8133_7439\BL\obj\Debug\ref\BL.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.deps.json
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.dll
 D:\תכנות-זהבי\C-SharpProject\DotNet2026_8133_7439\bin\BL.pdb

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfSale>
-	<sale>
-		<id>41</id>
-		<product_id>1</product_id>
-		<amount_to_sale>30</amount_to_sale>
-		<count_to_sale>1200</count_to_sale>
-		<to_club>false</to_club>
-		<start_date>2026-05-06T18:17:12.215</start_date>
-		<end_date>2026-05-14T18:17:12.216098+03:00</end_date>
-	</sale>
+  <sale>
+    <id>41</id>
+    <product_id>1</product_id>
+    <count_to_sale>1</count_to_sale>
+    <amount_to_sale>1</amount_to_sale>
+    <discount>1</discount>
+    <to_club>true</to_club>
+    <start_date>2026-06-08T10:41:37.0177201+03:00</start_date>
+    <end_date>2026-07-08T10:41:37.0177322+03:00</end_date>
+  </sale>
+  <sale>
+    <id>42</id>
+    <product_id>1</product_id>
+    <count_to_sale>1</count_to_sale>
+    <amount_to_sale>1</amount_to_sale>
+    <discount>1</discount>
+    <to_club>true</to_club>
+    <start_date>2026-06-08T10:41:59.0928094+03:00</start_date>
+    <end_date>2026-07-08T10:41:59.0928232+03:00</end_date>
+  </sale>
 </ArrayOfSale>

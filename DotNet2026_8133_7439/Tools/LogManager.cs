@@ -1,47 +1,89 @@
 using System;
-using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Tools
+namespace Tools;
+
+public static class LogManager
 {
-    public class LogManager
+    private const string Log = "Log";
+public static void LogMessage(string projectName, string funcName, string message)
+{
+    string filePath = GetCurrentFilePath();
+
+    File.WriteAllText(
+        Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "test.txt"),
+        filePath);
+
+    string directoryPath = GetCurrentDirectoryPath();
+    Directory.CreateDirectory(directoryPath);
+
+    if (!File.Exists(filePath))
     {
-        private const string Log = "Log";
-        public static void LogMessage(string project_name, string func_name, string message)//פונקציה סטטית לקבלת ניתוב התקיה הנוכחית
+        File.Create(filePath).Close();
+    }
+
+    string logEntry =
+        $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}\t{projectName}.{funcName}:\t{message}";
+
+    File.AppendAllText(filePath, logEntry + Environment.NewLine);
+}
+//     public static void LogMessage(string projectName, string funcName, string message)
+//     {
+//         ////
+// System.Windows.Forms.MessageBox.Show("LogMessage called");
+//         string directoryPath = GetCurrentDirectoryPath();
+//         Directory.CreateDirectory(directoryPath);
+//         ////
+// System.Diagnostics.Debug.WriteLine(LogManager.GetCurrentFilePath());        string filePath = GetCurrentFilePath();
+//         if (!File.Exists(filePath))
+//         {
+//             File.Create(filePath).Close();
+//         }
+
+//         string logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss}\t{projectName}.{funcName}:\t{message}";
+//         File.AppendAllText(filePath, logEntry + Environment.NewLine);
+//     }
+
+    public static string GetCurrentDirectoryPath()
+    {
+        string root = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Log);
+        string monthDirectory = DateTime.Now.ToString("yyyy-MM", CultureInfo.InvariantCulture);
+        return Path.Combine(root, monthDirectory);
+    }
+
+    public static string GetCurrentFilePath()
+    {
+        string directory = GetCurrentDirectoryPath();
+        string fileName = $"log_{DateTime.Now:yyyyMMdd}.txt";
+        return Path.Combine(directory, fileName);
+    }
+
+    public static void CleanOldLogs()
+    {
+        string root = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, Log);
+        if (!Directory.Exists(root))
+            return;
+
+        DateTime now = DateTime.Now;
+        foreach (var directory in Directory.GetDirectories(root))
         {
-            // תיקיית חודש נפרדת (פורמט yyyy-MM)
-            string monthDirName = DateTime.Now.ToString("yyyy-MM");
-            string dirPath = Path.Combine(GetCurrentDirectoryPath(), monthDirName);
+            string folderName = Path.GetFileName(directory);
+            if (!DateTime.TryParseExact(folderName + "-01", "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var folderDate))
+                continue;
 
-            if (!Directory.Exists(dirPath))
-                Directory.CreateDirectory(dirPath);
-
-            // קובץ יומי (שם מבוסס על תאריך בלבד)
-            string fileName = $"log_{DateTime.Now:yyyyMMdd}.txt";
-            string filePath = Path.Combine(dirPath, fileName);
-
-            if (!File.Exists(filePath))
-                File.Create(filePath).Close();
-
-            string logEntry = $"{DateTime.Now}\t{project_name}.{func_name}:\t{message}";
-            File.AppendAllText(filePath, logEntry + Environment.NewLine);
-        }
-
-        // מחזירה את נתיב התקייה הנוכחית
-        public static string GetCurrentDirectoryPath()
-        {
-            return Directory.GetCurrentDirectory();
-        }
-
-        // מחזירה נתיב לקובץ עם שם מבוסס על התאריך והשעה הנוכחית
-        public static string GetCurrentFilePath()
-        {
-            string dir = GetCurrentDirectoryPath();
-            string fileName = $"log_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
-            return Path.Combine(dir, fileName);
+            int monthDifference = (now.Year - folderDate.Year) * 12 + (now.Month - folderDate.Month);
+            if (monthDifference > 1)
+            {
+                try
+                {
+                    Directory.Delete(directory, true);
+                }
+                catch
+                {
+                    // ׳׳ ׳׳ ׳ ׳™׳×׳ ׳׳׳—׳•׳§, ׳ ׳׳©׳™׳ ׳”׳׳׳”
+                }
+            }
         }
     }
 }

@@ -33,6 +33,7 @@ namespace UI.Forms
                 s.ProductId,
                 s.ProductsCountToSale,
                 s.PriceAfterSale,
+                s.Discount,
                 s.OnlyClubCustomers,
                 s.DateStart,
                 s.DateEnd
@@ -50,7 +51,7 @@ namespace UI.Forms
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            var f = new SaleForm(_bl); // áìé ID
+            var f = new SaleForm(_bl); // ï¿½ï¿½ï¿½ ID
             if (f.ShowDialog(this) == DialogResult.OK)
                 LoadSales(txtFilter.Text);
         }

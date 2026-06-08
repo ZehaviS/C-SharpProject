@@ -18,6 +18,7 @@ namespace Dal
         private string PRODUCTID = "product_id";
         private string AMOUNTTOSALE = "amount_to_sale";
         private string COUNTTOSALE = "count_to_sale";
+        private string DISCOUNT = "discount";
         private string TOCLUB = "to_club";
         private string STARTDATE = "start_date";
         private string ENDDATE = "end_date";
@@ -76,6 +77,7 @@ namespace Dal
                 new XElement(PRODUCTID, sale.ProductId),
                 new XElement(COUNTTOSALE, sale.ProductsCountToSale),
                 new XElement(AMOUNTTOSALE, sale.PriceAfterSale),
+                new XElement(DISCOUNT, sale.Discount),
                 new XElement(TOCLUB, sale.OnlyClubCustomers),
                 new XElement(STARTDATE, FormatNullableDate(sale.DateStart)),
                 new XElement(ENDDATE, FormatNullableDate(sale.DateEnd))
@@ -93,6 +95,7 @@ namespace Dal
                 ProductId = int.Parse(element.Element(PRODUCTID)!.Value),
                 ProductsCountToSale = int.Parse(element.Element(COUNTTOSALE)!.Value),
                 PriceAfterSale = double.Parse(element.Element(AMOUNTTOSALE)!.Value),
+                Discount = double.Parse(element.Element(DISCOUNT)?.Value ?? "0"),
                 OnlyClubCustomers = bool.Parse(element.Element(TOCLUB)!.Value),
                 DateStart = ParseNullableDate(element.Element(STARTDATE)?.Value),
                 DateEnd = ParseNullableDate(element.Element(ENDDATE)?.Value)
@@ -135,6 +138,18 @@ namespace Dal
             saleElement.Element(PRODUCTID)!.Value = item.ProductId.ToString();
             saleElement.Element(COUNTTOSALE)!.Value = item.ProductsCountToSale.ToString();
             saleElement.Element(AMOUNTTOSALE)!.Value = item.PriceAfterSale.ToString();
+            
+            // Handle DISCOUNT - create if doesn't exist
+            var discountElement = saleElement.Element(DISCOUNT);
+            if (discountElement == null)
+            {
+                saleElement.Add(new XElement(DISCOUNT, item.Discount.ToString()));
+            }
+            else
+            {
+                discountElement.Value = item.Discount.ToString();
+            }
+            
             saleElement.Element(TOCLUB)!.Value = item.OnlyClubCustomers.ToString();
             saleElement.Element(STARTDATE)!.Value = FormatNullableDate(item.DateStart);
             saleElement.Element(ENDDATE)!.Value = FormatNullableDate(item.DateEnd);

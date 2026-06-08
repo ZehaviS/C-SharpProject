@@ -15,7 +15,9 @@ internal class ImplementationProduct : IProduct
         {
             ProductId = item.ProductId,
             ProductName = item.ProductName,
-            ProductPrice = item.ProductPrice
+            ProductPrice = item.ProductPrice,
+            ProductCategory = (DO.ProductsCategories)(int)item.ProductCategory,
+            ProductCount = item.ProductCount
         });
 
         return item.ProductId;
@@ -32,7 +34,9 @@ internal class ImplementationProduct : IProduct
         {
             ProductId = p.ProductId,
             ProductName = p.ProductName,
-            ProductPrice = p.ProductPrice
+            ProductPrice = p.ProductPrice,
+            ProductCategory = (BO.ProductsCategories)(int)p.ProductCategory,
+            ProductCount = p.ProductCount
         };
     }
 
@@ -51,7 +55,9 @@ internal class ImplementationProduct : IProduct
         {
             ProductId = p.ProductId,
             ProductName = p.ProductName,
-            ProductPrice = p.ProductPrice
+            ProductPrice = p.ProductPrice,
+            ProductCategory = (BO.ProductsCategories)(int)p.ProductCategory,
+            ProductCount = p.ProductCount
         }).ToList();
 
         if (filter != null)
@@ -67,7 +73,9 @@ internal class ImplementationProduct : IProduct
         {
             ProductId = item.ProductId,
             ProductName = item.ProductName,
-            ProductPrice = item.ProductPrice
+            ProductPrice = item.ProductPrice,
+            ProductCategory = (DO.ProductsCategories)(int)item.ProductCategory,
+            ProductCount = item.ProductCount
         });
     }
 

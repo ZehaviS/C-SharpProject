@@ -70,6 +70,17 @@ namespace BlImplementation
     {
         private readonly IDal _dal = DalApi.Factory.Get;
 
+        public Order CreateOrder(bool isPreferedCustomer = false)
+        {
+            return new Order
+            {
+                ProductInOrder = new List<ProductInOrder>(),
+                IsPreferedCustomer = isPreferedCustomer,
+                TotalPrice = 0,
+                DiscountApplied = 0
+            };
+        }
+
         // ================= ADD PRODUCT =================
         public List<SaleInProduct> AddProductToOrder(Order order, int productId, int count)
         {
